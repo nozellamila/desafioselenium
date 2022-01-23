@@ -1,0 +1,13 @@
+com\desafioselenium\flows\LoginFlows.class
+com\desafioselenium\bases\TestBase.class
+com\desafioselenium\bases\PageBase.class
+com\desafioselenium\utils\DriverFactory.class
+com\desafioselenium\tests\LoginTests.class
+com\desafioselenium\GlobalParameters.class
+com\desafioselenium\pages\LoginPage.class
+com\desafioselenium\utils\Browsers.class
+com\desafioselenium\dbsteps\UsuariosDBSteps.class
+com\desafioselenium\pages\MainPage.class
+com\desafioselenium\utils\DBUtils.class
+com\desafioselenium\utils\Utils.class
+com\desafioselenium\pages\BugReportPage.class

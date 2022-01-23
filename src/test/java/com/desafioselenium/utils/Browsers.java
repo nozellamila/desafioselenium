@@ -24,7 +24,7 @@ public class Browsers {
         chromeOptions.addArguments("--lang=pt-BR");
         chromeOptions.addArguments("download.default_directory", downloadPath);
 
-        System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir")+"/src/test/resources/drivers/chromedriver.exe");
+        System.setProperty("webdriver.chrome.driver", "C://chromedriver/chromedriver.exe");
 
         return new ChromeDriver(chromeOptions);
     }
