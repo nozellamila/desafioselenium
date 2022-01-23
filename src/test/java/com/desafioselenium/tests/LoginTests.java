@@ -6,47 +6,45 @@ import com.desafioselenium.pages.LoginPage;
 import com.desafioselenium.pages.MainPage;
 import org.junit.Assert;
 import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.TestInstance;
 
-
+@TestInstance(TestInstance.Lifecycle.PER_METHOD)
 public class LoginTests extends TestBase {
-    //Objects
+
     LoginPage loginPage;
     MainPage mainPage;
 
-    //Tests
     @Test
     public void efetuarLoginComSucesso(){
-        //Objects instances
         loginPage = new LoginPage();
         mainPage = new MainPage();
 
-        //Parameteres
-        String usuario = "templateautomacao";
+        String usuario = "administrator";
         String senha = "123456";
 
-        //Test
         loginPage.preenhcerUsuario(usuario);
+        loginPage.clicarEmEntrar();
         loginPage.preencherSenha(senha);
-        loginPage.clicarEmLogin();
+        loginPage.clicarEmEntrar();
 
         Assert.assertEquals(usuario, mainPage.retornaUsernameDasInformacoesDeLogin());
     }
 
-    //@Test
-    public void efetuarLoginComSucesso_SenhaRetornadaDoDB(){
-        //Objects instances
+    @Test
+    public void efetuarLoginComSenhaInvalida(){
+
         loginPage = new LoginPage();
         mainPage = new MainPage();
 
-        //Parameteres
-        String usuario = "templateautomacao";
-        String senha = UsuariosDBSteps.retornaSenhaDoUsuarioDB(usuario);
+        String usuario = "administrator";
+        String senha = "123";
+        String msgSenhaInvalida = "Sua conta pode estar desativada ou bloqueada ou o nome de usuário e a senha que você digitou não estão corretos.";
 
-        //Test
         loginPage.preenhcerUsuario(usuario);
+        loginPage.clicarEmEntrar();
         loginPage.preencherSenha(senha);
-        loginPage.clicarEmLogin();
+        loginPage.clicarEmEntrar();
 
-        Assert.assertEquals(usuario, mainPage.retornaUsernameDasInformacoesDeLogin());
+        Assert.assertEquals(msgSenhaInvalida, loginPage.retornaMensagemDeErro());
     }
 }

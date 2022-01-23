@@ -2,33 +2,26 @@ package com.desafioselenium.bases;
 
 import com.desafioselenium.GlobalParameters;
 import com.desafioselenium.utils.DriverFactory;
-import org.junit.After;
-import org.junit.Before;
-import org.junit.jupiter.api.AfterAll;
-import org.junit.jupiter.api.BeforeAll;
+import org.junit.jupiter.api.AfterEach;
+import org.junit.jupiter.api.BeforeEach;
 
-
-import java.lang.reflect.Method;
 
 public class TestBase {
-    @BeforeAll
-    public void beforeSuite(){
-        new GlobalParameters();
+
+
+    @BeforeEach
+    public void beforeTest(){
+        GlobalParameters globalParameters= new GlobalParameters();
+        DriverFactory driverFactory = new DriverFactory();
+        driverFactory.createInstance();
+        driverFactory.INSTANCE.manage().window().maximize();
+        driverFactory.INSTANCE.navigate().to(globalParameters.URL_DEFAULT);
     }
 
-    @Before
-    public void beforeTest(Method method){
-        DriverFactory.createInstance();
-        DriverFactory.INSTANCE.manage().window().maximize();
-        DriverFactory.INSTANCE.navigate().to(GlobalParameters.URL_DEFAULT);
-    }
-
-    @After
+    @AfterEach
     public void afterTest(){
-        DriverFactory.quitInstace();
+        DriverFactory driverFactory = new DriverFactory();
+        driverFactory.quitInstace();
     }
 
-    @AfterAll
-    public void afterSuite(){
-    }
 }

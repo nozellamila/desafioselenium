@@ -23,6 +23,9 @@ public class Browsers {
         chromeOptions.addArguments("--allow-running-insecure-content");
         chromeOptions.addArguments("--lang=pt-BR");
         chromeOptions.addArguments("download.default_directory", downloadPath);
+
+        System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir")+"/src/test/resources/drivers/chromedriver.exe");
+
         return new ChromeDriver(chromeOptions);
     }
 

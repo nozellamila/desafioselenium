@@ -5,7 +5,7 @@ import org.openqa.selenium.By;
 
 public class MainPage extends PageBase {
     //Mapping
-    By usernameLoginInfoTextArea = By.xpath("//td[@class='login-info-left']/span[@class='italic']");
+    By usernameLoginInfoTextArea = By.xpath("//span[@class='user-info']");
     By reportIssueLink = By.xpath("//a[@href='/bug_report_page.php']");
 
     //Actions

@@ -8,19 +8,21 @@ public class DriverFactory {
     public static WebDriver INSTANCE = null;
 
     public static void createInstance(){
-        String browser = GlobalParameters.BROWSER_DEFAULT;
-        String execution = GlobalParameters.EXECUTION;
+        GlobalParameters globalParameters = new GlobalParameters();
+        Browsers browsers = new Browsers();
+        String browser = globalParameters.BROWSER_DEFAULT;
+        String execution = globalParameters.EXECUTION;
 
         if (INSTANCE==null){
             if(execution.equals("local")){
                 if(browser.equals("chrome")){
-                    INSTANCE = Browsers.getLocalChrome();
+                    INSTANCE = browsers.getLocalChrome();
                 }else if(browser.equals("chromeHeadless")){
-                    INSTANCE = Browsers.getLocalChromeHeadless();
+                    INSTANCE = browsers.getLocalChromeHeadless();
                 }else if(browser.equals("firefox")){
-                    INSTANCE = Browsers.getLocalFirefox();
+                    INSTANCE = browsers.getLocalFirefox();
                 }else if (browser.equals("ie")){
-                    INSTANCE = Browsers.getLocalInternetExplorer();
+                    INSTANCE = browsers.getLocalInternetExplorer();
                 }else{
                     try{
                         throw new Exception("O browser informado não existe ou não é suportado pela automação");
@@ -32,13 +34,13 @@ public class DriverFactory {
 
             if(execution.equals("remota")){
                 if(browser.equals("chrome")){
-                    INSTANCE = Browsers.getRemoteChrome();
+                    INSTANCE = browsers.getRemoteChrome();
                 }else if(browser.equals("chromeHeadless")){
-                    INSTANCE = Browsers.getRemoteChromeHeadless();
+                    INSTANCE = browsers.getRemoteChromeHeadless();
                 }else if(browser.equals("firefox")){
-                    INSTANCE = Browsers.getRemoteFirefox();
+                    INSTANCE = browsers.getRemoteFirefox();
                 }else if (browser.equals("ie")){
-                    INSTANCE = Browsers.getRemoteInternetExplorer();
+                    INSTANCE = browsers.getRemoteInternetExplorer();
                 }else{
                     try{
                         throw new Exception("O browser informado não existe ou não é suportado pela automação");
