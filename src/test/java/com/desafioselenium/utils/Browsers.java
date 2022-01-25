@@ -46,7 +46,7 @@ public class Browsers {
             e.printStackTrace();
         }
 
-        return new RemoteWebDriver(url, capabilities);
+        return new RemoteWebDriver(url, chromeOptions);
     }
 
     public static WebDriver getLocalChromeHeadless(){
