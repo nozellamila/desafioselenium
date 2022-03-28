@@ -9,6 +9,8 @@ import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.apache.commons.lang3.time.StopWatch;
 
+import java.util.List;
+
 public class PageBase {
     //Variaveis globlais
     protected WebDriverWait wait = null;
@@ -43,6 +45,14 @@ public class PageBase {
         WebElement element = driver.findElement(locator);
         wait.until(ExpectedConditions.elementToBeClickable(element));
         return element;
+    }
+
+    protected List<WebElement> waitForElements(By locator){
+        waitUntilPageReady();
+        wait.until(ExpectedConditions.presenceOfElementLocated(locator));
+        List<WebElement> elements = driver.findElements(locator);
+        wait.until(ExpectedConditions.elementToBeClickable(elements.get(0)));
+        return elements;
     }
 
     protected WebElement waitForElementByTime(By locator, int time){
@@ -229,5 +239,9 @@ public class PageBase {
     public String getURL(){
         String url = driver.getCurrentUrl();
         return url;
+    }
+
+    public boolean retornaIfMensagemPresente(String mensagem){
+        return driver.getPageSource().contains(mensagem);
     }
 }
