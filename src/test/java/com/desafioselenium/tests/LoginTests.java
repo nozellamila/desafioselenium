@@ -20,7 +20,7 @@ public class LoginTests extends TestBase {
         mainPage = new MainPage();
 
         String usuario = "administrator";
-        String senha = "123456";
+        String senha = "administrator";
 
         loginPage.preenhcerUsuario(usuario);
         loginPage.clicarEmEntrar();

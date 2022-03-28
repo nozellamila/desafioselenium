@@ -7,6 +7,9 @@ import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileReader;
 import java.io.IOException;
+import java.nio.charset.StandardCharsets;
+import java.nio.file.Files;
+import java.nio.file.Paths;
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.util.Date;
@@ -62,5 +65,15 @@ public class Utils {
         }
 
         return sb.toString();
+    }
+
+    public static String readFileToAString(String path){
+        byte[] encoded = new byte[0];
+        try {
+            encoded = Files.readAllBytes(Paths.get(path));
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        return new String(encoded, StandardCharsets.ISO_8859_1);
     }
 }
