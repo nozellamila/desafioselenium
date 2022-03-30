@@ -44,6 +44,12 @@ public class ViewIssuesPage extends PageBase {
     By reminderTextArea = By.name("bugnote_text");
     By sendButton = By.xpath("//input[@value='Send']");
 
+    By closeButton = By.xpath("//input[@value='Close']");
+    By confirmarCloseButton = By.xpath("//input[@value='Close Issue']");
+
+    By reopenButton = By.xpath("//input[@value='Reopen']");
+    By requestFeedbackButton = By.xpath("//input[@value='Request Feedback']");
+
     //Actions
     public void clicarMenuViewIssues(){
         click(viewIssuesMenu);
@@ -102,4 +108,12 @@ public class ViewIssuesPage extends PageBase {
     public void selecionarDestinatario(String destinatario){comboBoxSelectByVisibleText(selectRecipientSelect, destinatario);}
     public void preencherLembrete(String lembrete){sendKeys(reminderTextArea, lembrete);}
     public void clicarSendLembrete(){click(sendButton);}
+
+    public void fecharIssue(){
+        click(closeButton);
+        click(confirmarCloseButton);
+    }
+    public void clicarReabrirIssue(){click(reopenButton);}
+    public void clicarRequestFeedback(){click(requestFeedbackButton);}
+
 }

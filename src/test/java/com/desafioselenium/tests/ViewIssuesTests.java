@@ -1,7 +1,6 @@
 package com.desafioselenium.tests;
 
 import com.desafioselenium.bases.TestBase;
-import com.desafioselenium.dbsteps.IssuesDBSteps;
 import com.desafioselenium.flows.ReportIssueFlows;
 import com.desafioselenium.flows.ViewIssuesFlows;
 import com.desafioselenium.pages.LoginPage;
@@ -249,6 +248,43 @@ public class ViewIssuesTests extends TestBase {
         Assert.assertTrue(qtdLinhasAfter > qtdLinhasBefore);
 
         viewIssuesPage.scrollToInicio();
+
+        viewIssuesPage.deletarIssue();
+    }
+
+    @Test
+    public void fecharIssue(){
+        loginPage = new LoginPage();
+        viewIssuesPage = new ViewIssuesPage();
+        reportIssuesPage = new ReportIssuesPage();
+        reportIssueFlows = new ReportIssueFlows();
+
+        reportIssueFlows.criarIssue();
+
+        viewIssuesPage.fecharIssue();
+
+        Assert.assertTrue(viewIssuesPage.retornaStatus().contains("closed"));
+
+        viewIssuesPage.deletarIssue();
+    }
+
+    @Test
+    public void reabrirIssue(){
+        loginPage = new LoginPage();
+        viewIssuesPage = new ViewIssuesPage();
+        reportIssuesPage = new ReportIssuesPage();
+        reportIssueFlows = new ReportIssueFlows();
+
+        reportIssueFlows.criarIssue();
+
+        viewIssuesPage.fecharIssue();
+
+        Assert.assertTrue(viewIssuesPage.retornaStatus().contains("closed"));
+
+        viewIssuesPage.clicarReabrirIssue();
+        viewIssuesPage.clicarRequestFeedback();
+
+        Assert.assertTrue(viewIssuesPage.retornaStatus().contains("feedback"));
 
         viewIssuesPage.deletarIssue();
     }

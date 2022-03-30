@@ -10,7 +10,11 @@ public class LoginPage extends PageBase {
     By emailField = By.name("email");
     By loginButton = By.xpath("//input[@type='submit']");
     By mensagemErroTextArea = By.xpath("//div[@class='alert alert-danger']/p");
-    By criarNovaContaLink = By.linkText("criar nova conta");
+    By criarNovaContaLink = By.xpath("//div[2]/a");
+    By criarContaButton = By.xpath("//input[@value='Criar Conta']");
+    By cliqueParaProsseguirButton = By.xpath("//div[4]/a");
+    By perdeuASenhaLink = By.xpath("//form/fieldset/a");
+    By enviarButton = By.xpath("//input[@value='Enviar']");
 
     //Actions
     public void preenhcerUsuario(String usuario){
@@ -26,6 +30,15 @@ public class LoginPage extends PageBase {
     public void clicarEmEntrar(){
         click(loginButton);
     }
+    public void clicarCriarConta(){
+        click(criarContaButton);
+    }
+    public void clicarPerdeuASenha(){
+        click(perdeuASenhaLink);
+    }
+    public void clicarEnviar(){
+        click(enviarButton);
+    }
 
     public String retornaMensagemDeErro(){
         return getText(mensagemErroTextArea);
@@ -34,8 +47,7 @@ public class LoginPage extends PageBase {
     public void clicarEmCriarNovaConta(){
         click(criarNovaContaLink);
     }
-    public void preencherEmail(String email){
-
-        sendKeys(emailField, email);
-    }
+    public void preencherEmail(String email){sendKeys(emailField, email); }
+    public boolean mensagemEstaPresente(String mensagem){ return retornaIfMensagemPresente(mensagem); }
+    public void clicarParaProsseguir(){click(cliqueParaProsseguirButton);}
 }
