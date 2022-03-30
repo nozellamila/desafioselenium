@@ -10,7 +10,6 @@ public class ReportIssuesPage extends PageBase {
     By categoryComboBox = By.name("category_id");
     By summaryInput = By.name("summary");
     By descriptionInput = By.name("description");
-    By uploadFileInput = By.xpath("//table/tbody/tr[12]/td/input");
     By submitButton = By.xpath("//input[@type='submit']");
     By bugDescriptionField = By.xpath("//td[@class='bug-description']");
 
@@ -28,11 +27,10 @@ public class ReportIssuesPage extends PageBase {
     public void preencherDescricao(String descricao){
         sendKeys(descriptionInput, descricao);
     }
-    public void inserirAnexo(String caminhoArquivo){
-        sendKeysWithoutWaitVisible(uploadFileInput, caminhoArquivo);
-    }
     public void clicarEmSubmitReport(){
         click(submitButton);
     }
     public String retornaDescricaoCriada(){return getText(bugDescriptionField);}
+    public boolean mensagemEstaPresente(String mensagem){ return retornaIfMensagemPresente(mensagem); }
+
 }

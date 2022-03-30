@@ -9,6 +9,8 @@ import com.desafioselenium.pages.ViewIssuesPage;
 import org.junit.Assert;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.TestInstance;
+import org.junit.jupiter.params.ParameterizedTest;
+import org.junit.jupiter.params.provider.CsvFileSource;
 
 import java.util.Random;
 
@@ -58,8 +60,11 @@ public class ManageUserTests extends TestBase {
 
     }
 
-    @Test//csv
-    public void criarUsuarioInformacoesInvalidas(){
+    @ParameterizedTest(name = "{index} => username={0}, email={1}, mensagem={2}")
+    @CsvFileSource(resources = "/data/usuarioValidations.csv")
+    public void criarUsuarioInformacoesInvalidas(String username,
+                                                 String email,
+                                                 String mensagem){
         loginPage = new LoginPage();
         mainPage = new MainPage();
         manageUserPage = new ManageUserPage();
@@ -67,10 +72,22 @@ public class ManageUserTests extends TestBase {
 
         String usuario = "administrator";
         String senha = "administrator";
-        String novoUsuario = "teste" + rdm;
-        String email = "teste-" + rdm + "@email.com";
 
+        loginPage.preenhcerUsuario(usuario);
+        loginPage.clicarEmEntrar();
+        loginPage.preencherSenha(senha);
+        loginPage.clicarEmEntrar();
 
+        mainPage.clicarMenuManage();
+        mainPage.clicarManageUsers();
+
+        manageUserPage.clicarCriarNovaConta();
+        manageUserPage.preencherUsernameInput(username);
+        manageUserPage.preencherRealnameInput(username);
+        manageUserPage.preencherEmailInput(email);
+        manageUserPage.clicarCreateUserButton();
+
+        Assert.assertTrue(manageUserPage.mensagemEstaPresente(mensagem));
 
     }
 

@@ -29,5 +29,6 @@ public class MainPage extends PageBase {
     public void clicarManageTags(){click(manageTags);}
     public void clicarManageProjects(){click(manageProjects);}
     public void clicarManageCustomFields(){click(manageCustomFields);}
+    public void clicarManageGlobalProfiles(){click(manageGlobalProfiles);}
 
 }

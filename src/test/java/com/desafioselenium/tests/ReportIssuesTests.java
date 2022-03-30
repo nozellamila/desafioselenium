@@ -10,6 +10,8 @@ import com.desafioselenium.utils.DBUtils;
 import org.junit.Assert;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.TestInstance;
+import org.junit.jupiter.params.ParameterizedTest;
+import org.junit.jupiter.params.provider.CsvFileSource;
 
 import java.util.Random;
 
@@ -49,9 +51,36 @@ public class ReportIssuesTests extends TestBase {
         viewIssuesPage.deletarIssue();
     }
 
-    @Test//csv
-    public void criarIssueDadosInvalidos(){
+    @ParameterizedTest(name = "{index} => categoria={0}, resumo={1}, descricao={2}, mensagem={3}")
+    @CsvFileSource(resources = "/data/issueValidations.csv")
+    public void criarIssueDadosInvalidos(String categoria,
+                                         String resumo,
+                                         String descricao,
+                                         String mensagem){
+        loginPage = new LoginPage();
+        reportIssuesPage = new ReportIssuesPage();
+        viewIssuesPage = new ViewIssuesPage();
+        reportIssueFlows = new ReportIssueFlows();
+        int rdm = new Random().nextInt(1000);
+        resumo = resumo + rdm;
+        descricao = descricao + rdm;
 
+        String usuario = "administrator";
+        String senha = "administrator";
+
+        loginPage.preenhcerUsuario(usuario);
+        loginPage.clicarEmEntrar();
+        loginPage.preencherSenha(senha);
+        loginPage.clicarEmEntrar();
+
+        reportIssuesPage.clicarMenuReportIssue();
+        reportIssuesPage.clicarSelecionarProjeto();
+        reportIssuesPage.selecionarCategoria(categoria);
+        reportIssuesPage.preencherResumo(resumo);
+        reportIssuesPage.preencherDescricao(descricao);
+        reportIssuesPage.clicarEmSubmitReport();
+
+        Assert.assertTrue(reportIssuesPage.mensagemEstaPresente(mensagem));
     }
 
     @Test

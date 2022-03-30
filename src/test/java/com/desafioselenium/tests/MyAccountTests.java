@@ -10,6 +10,8 @@ import com.desafioselenium.pages.MyAccountPage;
 import org.junit.Assert;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.TestInstance;
+import org.junit.jupiter.params.ParameterizedTest;
+import org.junit.jupiter.params.provider.CsvFileSource;
 
 @TestInstance(TestInstance.Lifecycle.PER_METHOD)
 public class MyAccountTests extends TestBase {
@@ -51,19 +53,30 @@ public class MyAccountTests extends TestBase {
         myAccountPage.clicarUpdateUser();
     }
 
-    @Test//csv
-    public void mudarSenhaUsuarioDadosInvalidos(){
+    @ParameterizedTest(name = "{index} => senhaAtual={0}, senhaNova={1}, confirmacaoSenha={2}, mensagem={3}")
+    @CsvFileSource(resources = "/data/senhaValidations.csv")
+    public void mudarSenhaUsuarioDadosInvalidos(String senhaAtual,
+                                                String senhaNova,
+                                                String confirmacaoSenha,
+                                                String mensagem){
         loginFlows = new LoginFlows();
         mainPage = new MainPage();
         manageUserPage = new ManageUserPage();
         myAccountPage = new MyAccountPage();
         String username = "administrator";
-        String senhaAtual = "administrator";
-        String senhaNova = "123456";
+        String senhaAdm = "administrator";
 
+        loginFlows.efetuarLogin(username, senhaAdm);
 
+        myAccountPage.clicarUserInfo();
+        myAccountPage.clicarMyAccount();
 
+        myAccountPage.preencherSenhaAtual(senhaAtual);
+        myAccountPage.preencherNovaSenha(senhaNova);
+        myAccountPage.preencherConfirmacaoSenha(confirmacaoSenha);
+        myAccountPage.clicarUpdateUser();
 
+        Assert.assertTrue(myAccountPage.mensagemEstaPresente(mensagem));
     }
 
     @Test

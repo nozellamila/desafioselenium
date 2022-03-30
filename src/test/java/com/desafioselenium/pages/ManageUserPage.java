@@ -47,5 +47,6 @@ public class ManageUserPage extends PageBase {
     public boolean checkHabilitadoExiste(){return returnIfElementExists(checkColunaEnabled);}
     public void clicarEnabledCheckbox(){ClickJavaScript(enabledCheckbox);}
     public void clicarShowDisabledCheckbox(){ClickJavaScript(showDisabledCheckbox);}
+    public boolean mensagemEstaPresente(String mensagem){ return retornaIfMensagemPresente(mensagem); }
 
 }

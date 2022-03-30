@@ -37,5 +37,6 @@ public class MyAccountPage extends PageBase {
     public void scrollToInicio(){ ScrollToTop(); }
     public void scrollToUpdatePrefs(){ScrollToElementJavaScript(updatePrefsButton);}
     public void clicarUpdatePrefs(){click(updatePrefsButton);}
+    public boolean mensagemEstaPresente(String mensagem){ return retornaIfMensagemPresente(mensagem); }
 
 }
