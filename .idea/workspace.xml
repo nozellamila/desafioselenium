@@ -5,25 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cf213a9a-d227-43b8-906f-85c2d926eb78" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/desafioselenium/pages/ManageGlobalProfilesPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/desafioselenium/tests/ManageGlobalProfilesTests.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/data/issueValidations.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/data/senhaValidations.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/data/usuarioValidations.csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/desafioselenium/pages/MainPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/desafioselenium/pages/MainPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/desafioselenium/pages/MyAccountPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/desafioselenium/pages/MyAccountPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/desafioselenium/pages/ReportIssuesPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/desafioselenium/pages/ReportIssuesPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/desafioselenium/tests/ManageProjectsTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/desafioselenium/tests/ManageProjectsTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/desafioselenium/tests/ManageUserTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/desafioselenium/tests/ManageUserTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/desafioselenium/tests/MyAccountTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/desafioselenium/tests/MyAccountTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/desafioselenium/tests/ReportIssuesTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/desafioselenium/tests/ReportIssuesTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/desafioselenium/pages/MainPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/desafioselenium/pages/MainPage.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/desafioselenium/pages/MyAccountPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/desafioselenium/pages/MyAccountPage.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/desafioselenium/pages/ReportIssuesPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/desafioselenium/pages/ReportIssuesPage.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/desafioselenium/tests/ManageProjectsTests.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/desafioselenium/tests/ManageProjectsTests.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/desafioselenium/tests/MyAccountTests.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/desafioselenium/tests/MyAccountTests.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/desafioselenium/tests/ReportIssuesTests.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/desafioselenium/tests/ReportIssuesTests.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/desafioselenium/bases/PageBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/desafioselenium/bases/PageBase.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

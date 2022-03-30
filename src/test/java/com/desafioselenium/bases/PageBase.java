@@ -2,6 +2,7 @@ package com.desafioselenium.bases;
 
 import com.desafioselenium.GlobalParameters;
 import com.desafioselenium.utils.DriverFactory;
+import io.qameta.allure.Allure;
 import org.openqa.selenium.*;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
@@ -92,7 +93,7 @@ public class PageBase {
                 element = waitForElement(locator);
                 element.click();
                 timeOut.stop();
-
+                Allure.addAttachment();
                 return;
             }
 
