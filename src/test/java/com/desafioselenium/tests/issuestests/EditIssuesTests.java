@@ -1,22 +1,15 @@
-package com.desafioselenium.tests;
+package com.desafioselenium.tests.issuestests;
 
 import com.desafioselenium.bases.TestBase;
 import com.desafioselenium.flows.ReportIssueFlows;
 import com.desafioselenium.flows.ViewIssuesFlows;
-import com.desafioselenium.pages.EditIssuesPage;
+import com.desafioselenium.pages.issuespages.EditIssuesPage;
 import com.desafioselenium.pages.LoginPage;
-import com.desafioselenium.pages.ReportIssuesPage;
-import com.desafioselenium.pages.ViewIssuesPage;
-import com.desafioselenium.utils.DriverFactory;
-import com.desafioselenium.utils.Utils;
-import io.qameta.allure.Allure;
+import com.desafioselenium.pages.issuespages.ReportIssuesPage;
+import com.desafioselenium.pages.issuespages.ViewIssuesPage;
 import org.junit.Assert;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.TestInstance;
-import org.openqa.selenium.OutputType;
-import org.openqa.selenium.TakesScreenshot;
-
-import java.io.ByteArrayInputStream;
 
 @TestInstance(TestInstance.Lifecycle.PER_METHOD)
 public class EditIssuesTests extends TestBase {

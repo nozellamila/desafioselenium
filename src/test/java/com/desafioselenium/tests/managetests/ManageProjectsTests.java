@@ -1,9 +1,9 @@
-package com.desafioselenium.tests;
+package com.desafioselenium.tests.managetests;
 
 import com.desafioselenium.bases.TestBase;
 import com.desafioselenium.flows.LoginFlows;
 import com.desafioselenium.pages.MainPage;
-import com.desafioselenium.pages.ManageProjectsPage;
+import com.desafioselenium.pages.managepages.ManageProjectsPage;
 import org.junit.Assert;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.TestInstance;
@@ -96,7 +96,6 @@ public class ManageProjectsTests extends TestBase {
         loginFlows = new LoginFlows();
         mainPage = new MainPage();
         manageProjectsPage = new ManageProjectsPage();
-
         String username = "administrator";
         String senha = "administrator";
         int rdm = new Random().nextInt(1000);
@@ -104,19 +103,21 @@ public class ManageProjectsTests extends TestBase {
         String status = "release";
 
         loginFlows.efetuarLogin(username, senha);
-
         mainPage.clicarMenuManage();
         mainPage.clicarManageProjects();
+
+        //cria projeto
         manageProjectsPage.clicarCriarProjeto();
         manageProjectsPage.preencherNomeProjeto(nomeProjeto);
         manageProjectsPage.clicarAddProjeto();
 
+        //altera projeto
         manageProjectsPage.findProjetoCadastrado();
         manageProjectsPage.selecionarStatus(status);
         manageProjectsPage.clicarUpdateProjeto();
 
         Assert.assertTrue(manageProjectsPage.retornaTextoColunaStatus().contains(status));
-
+        //exclui projeto
         manageProjectsPage.findProjetoCadastrado();
         manageProjectsPage.deleteProjeto();
     }

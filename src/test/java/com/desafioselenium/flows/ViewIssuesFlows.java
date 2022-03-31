@@ -1,8 +1,8 @@
 package com.desafioselenium.flows;
 
 import com.desafioselenium.pages.LoginPage;
-import com.desafioselenium.pages.ReportIssuesPage;
-import com.desafioselenium.pages.ViewIssuesPage;
+import com.desafioselenium.pages.issuespages.ReportIssuesPage;
+import com.desafioselenium.pages.issuespages.ViewIssuesPage;
 
 public class ViewIssuesFlows {
     LoginPage loginPage;

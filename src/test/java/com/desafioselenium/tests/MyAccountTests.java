@@ -2,10 +2,8 @@ package com.desafioselenium.tests;
 
 import com.desafioselenium.bases.TestBase;
 import com.desafioselenium.flows.LoginFlows;
-import com.desafioselenium.flows.ManageUserFlows;
-import com.desafioselenium.pages.LoginPage;
 import com.desafioselenium.pages.MainPage;
-import com.desafioselenium.pages.ManageUserPage;
+import com.desafioselenium.pages.managepages.ManageUserPage;
 import com.desafioselenium.pages.MyAccountPage;
 import org.junit.Assert;
 import org.junit.jupiter.api.Test;

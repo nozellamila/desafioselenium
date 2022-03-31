@@ -2,8 +2,7 @@ package com.desafioselenium.flows;
 
 import com.desafioselenium.pages.LoginPage;
 import com.desafioselenium.pages.MainPage;
-import com.desafioselenium.pages.ManageUserPage;
-import org.junit.Assert;
+import com.desafioselenium.pages.managepages.ManageUserPage;
 
 import java.util.Random;
 

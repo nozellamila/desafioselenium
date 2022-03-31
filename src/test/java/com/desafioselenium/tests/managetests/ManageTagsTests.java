@@ -1,9 +1,9 @@
-package com.desafioselenium.tests;
+package com.desafioselenium.tests.managetests;
 
 import com.desafioselenium.bases.TestBase;
 import com.desafioselenium.flows.LoginFlows;
 import com.desafioselenium.pages.MainPage;
-import com.desafioselenium.pages.ManageTagsPage;
+import com.desafioselenium.pages.managepages.ManageTagsPage;
 import org.junit.Assert;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.TestInstance;

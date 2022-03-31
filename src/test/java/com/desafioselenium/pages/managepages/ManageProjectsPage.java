@@ -1,4 +1,4 @@
-package com.desafioselenium.pages;
+package com.desafioselenium.pages.managepages;
 
 import com.desafioselenium.bases.PageBase;
 import org.openqa.selenium.By;
