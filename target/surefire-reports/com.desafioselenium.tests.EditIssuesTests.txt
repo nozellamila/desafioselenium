@@ -1,0 +1,6 @@
+-------------------------------------------------------------------------------
+Test set: com.desafioselenium.tests.EditIssuesTests
+-------------------------------------------------------------------------------
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 146.066 s - in com.desafioselenium.tests.EditIssuesTests
+adicionarAnotacaoIssue  Time elapsed: 14.215 s
+mudarResponsavelIssue  Time elapsed: 131.777 s

@@ -7,9 +7,16 @@ import com.desafioselenium.pages.EditIssuesPage;
 import com.desafioselenium.pages.LoginPage;
 import com.desafioselenium.pages.ReportIssuesPage;
 import com.desafioselenium.pages.ViewIssuesPage;
+import com.desafioselenium.utils.DriverFactory;
+import com.desafioselenium.utils.Utils;
+import io.qameta.allure.Allure;
 import org.junit.Assert;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.TestInstance;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
+
+import java.io.ByteArrayInputStream;
 
 @TestInstance(TestInstance.Lifecycle.PER_METHOD)
 public class EditIssuesTests extends TestBase {

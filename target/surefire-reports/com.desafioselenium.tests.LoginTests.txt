@@ -1,6 +1,12 @@
 -------------------------------------------------------------------------------
 Test set: com.desafioselenium.tests.LoginTests
 -------------------------------------------------------------------------------
-Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 7.635 s - in com.desafioselenium.tests.LoginTests
-efetuarLoginComSucesso  Time elapsed: 4.673 s
-efetuarLoginComSenhaInvalida  Time elapsed: 2.881 s
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 278.201 s - in com.desafioselenium.tests.LoginTests
+esqueciASenhaUsuario  Time elapsed: 125.585 s
+efetuarLoginComSucesso  Time elapsed: 4.224 s
+criarContaEmailInvalido  Time elapsed: 3.752 s
+esqueciASenhaUsuarioUsuarioInvalido  Time elapsed: 4.191 s
+criarContaUsuarioInvalido  Time elapsed: 3.777 s
+criarConta  Time elapsed: 129.317 s
+efetuarLoginComSenhaInvalida  Time elapsed: 3.489 s
+esqueciASenhaUsuarioEmailInvalido  Time elapsed: 3.832 s

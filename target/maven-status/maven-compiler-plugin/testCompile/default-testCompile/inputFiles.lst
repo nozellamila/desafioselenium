@@ -1,13 +1,34 @@
-C:\Users\Mila\Documents\Desafio Selenium Base2\desafioselenium\src\test\java\com\desafioselenium\pages\LoginPage.java
-C:\Users\Mila\Documents\Desafio Selenium Base2\desafioselenium\src\test\java\com\desafioselenium\dbsteps\UsuariosDBSteps.java
-C:\Users\Mila\Documents\Desafio Selenium Base2\desafioselenium\src\test\java\com\desafioselenium\bases\TestBase.java
-C:\Users\Mila\Documents\Desafio Selenium Base2\desafioselenium\src\test\java\com\desafioselenium\pages\BugReportPage.java
-C:\Users\Mila\Documents\Desafio Selenium Base2\desafioselenium\src\test\java\com\desafioselenium\utils\Utils.java
-C:\Users\Mila\Documents\Desafio Selenium Base2\desafioselenium\src\test\java\com\desafioselenium\GlobalParameters.java
-C:\Users\Mila\Documents\Desafio Selenium Base2\desafioselenium\src\test\java\com\desafioselenium\utils\DBUtils.java
-C:\Users\Mila\Documents\Desafio Selenium Base2\desafioselenium\src\test\java\com\desafioselenium\bases\PageBase.java
-C:\Users\Mila\Documents\Desafio Selenium Base2\desafioselenium\src\test\java\com\desafioselenium\flows\LoginFlows.java
-C:\Users\Mila\Documents\Desafio Selenium Base2\desafioselenium\src\test\java\com\desafioselenium\utils\Browsers.java
-C:\Users\Mila\Documents\Desafio Selenium Base2\desafioselenium\src\test\java\com\desafioselenium\tests\LoginTests.java
-C:\Users\Mila\Documents\Desafio Selenium Base2\desafioselenium\src\test\java\com\desafioselenium\utils\DriverFactory.java
-C:\Users\Mila\Documents\Desafio Selenium Base2\desafioselenium\src\test\java\com\desafioselenium\pages\MainPage.java
+C:\Users\Mila\Documents\Desafio-Selenium-Base2\desafioselenium\src\test\java\com\desafioselenium\utils\DriverFactory.java
+C:\Users\Mila\Documents\Desafio-Selenium-Base2\desafioselenium\src\test\java\com\desafioselenium\tests\ManageUserTests.java
+C:\Users\Mila\Documents\Desafio-Selenium-Base2\desafioselenium\src\test\java\com\desafioselenium\pages\ManageCustomFieldsPage.java
+C:\Users\Mila\Documents\Desafio-Selenium-Base2\desafioselenium\src\test\java\com\desafioselenium\pages\ManageProjectsPage.java
+C:\Users\Mila\Documents\Desafio-Selenium-Base2\desafioselenium\src\test\java\com\desafioselenium\utils\DBUtils.java
+C:\Users\Mila\Documents\Desafio-Selenium-Base2\desafioselenium\src\test\java\com\desafioselenium\utils\Browsers.java
+C:\Users\Mila\Documents\Desafio-Selenium-Base2\desafioselenium\src\test\java\com\desafioselenium\tests\ManageCustomFieldsTests.java
+C:\Users\Mila\Documents\Desafio-Selenium-Base2\desafioselenium\src\test\java\com\desafioselenium\tests\LoginTests.java
+C:\Users\Mila\Documents\Desafio-Selenium-Base2\desafioselenium\src\test\java\com\desafioselenium\pages\LoginPage.java
+C:\Users\Mila\Documents\Desafio-Selenium-Base2\desafioselenium\src\test\java\com\desafioselenium\tests\EditIssuesTests.java
+C:\Users\Mila\Documents\Desafio-Selenium-Base2\desafioselenium\src\test\java\com\desafioselenium\bases\TestBase.java
+C:\Users\Mila\Documents\Desafio-Selenium-Base2\desafioselenium\src\test\java\com\desafioselenium\tests\ReportIssuesTests.java
+C:\Users\Mila\Documents\Desafio-Selenium-Base2\desafioselenium\src\test\java\com\desafioselenium\tests\ManageProjectsTests.java
+C:\Users\Mila\Documents\Desafio-Selenium-Base2\desafioselenium\src\test\java\com\desafioselenium\pages\MyAccountPage.java
+C:\Users\Mila\Documents\Desafio-Selenium-Base2\desafioselenium\src\test\java\com\desafioselenium\pages\ReportIssuesPage.java
+C:\Users\Mila\Documents\Desafio-Selenium-Base2\desafioselenium\src\test\java\com\desafioselenium\tests\ViewIssuesTests.java
+C:\Users\Mila\Documents\Desafio-Selenium-Base2\desafioselenium\src\test\java\com\desafioselenium\dbsteps\UsuariosDBSteps.java
+C:\Users\Mila\Documents\Desafio-Selenium-Base2\desafioselenium\src\test\java\com\desafioselenium\tests\ManageTagsTests.java
+C:\Users\Mila\Documents\Desafio-Selenium-Base2\desafioselenium\src\test\java\com\desafioselenium\bases\PageBase.java
+C:\Users\Mila\Documents\Desafio-Selenium-Base2\desafioselenium\src\test\java\com\desafioselenium\flows\LoginFlows.java
+C:\Users\Mila\Documents\Desafio-Selenium-Base2\desafioselenium\src\test\java\com\desafioselenium\GlobalParameters.java
+C:\Users\Mila\Documents\Desafio-Selenium-Base2\desafioselenium\src\test\java\com\desafioselenium\pages\MainPage.java
+C:\Users\Mila\Documents\Desafio-Selenium-Base2\desafioselenium\src\test\java\com\desafioselenium\utils\Utils.java
+C:\Users\Mila\Documents\Desafio-Selenium-Base2\desafioselenium\src\test\java\com\desafioselenium\dbsteps\IssuesDBSteps.java
+C:\Users\Mila\Documents\Desafio-Selenium-Base2\desafioselenium\src\test\java\com\desafioselenium\pages\ManageGlobalProfilesPage.java
+C:\Users\Mila\Documents\Desafio-Selenium-Base2\desafioselenium\src\test\java\com\desafioselenium\flows\ManageUserFlows.java
+C:\Users\Mila\Documents\Desafio-Selenium-Base2\desafioselenium\src\test\java\com\desafioselenium\pages\ManageUserPage.java
+C:\Users\Mila\Documents\Desafio-Selenium-Base2\desafioselenium\src\test\java\com\desafioselenium\pages\ManageTagsPage.java
+C:\Users\Mila\Documents\Desafio-Selenium-Base2\desafioselenium\src\test\java\com\desafioselenium\tests\ManageGlobalProfilesTests.java
+C:\Users\Mila\Documents\Desafio-Selenium-Base2\desafioselenium\src\test\java\com\desafioselenium\tests\MyAccountTests.java
+C:\Users\Mila\Documents\Desafio-Selenium-Base2\desafioselenium\src\test\java\com\desafioselenium\flows\ReportIssueFlows.java
+C:\Users\Mila\Documents\Desafio-Selenium-Base2\desafioselenium\src\test\java\com\desafioselenium\pages\EditIssuesPage.java
+C:\Users\Mila\Documents\Desafio-Selenium-Base2\desafioselenium\src\test\java\com\desafioselenium\flows\ViewIssuesFlows.java
+C:\Users\Mila\Documents\Desafio-Selenium-Base2\desafioselenium\src\test\java\com\desafioselenium\pages\ViewIssuesPage.java

@@ -1,0 +1,8 @@
+-------------------------------------------------------------------------------
+Test set: com.desafioselenium.tests.ManageCustomFieldsTests
+-------------------------------------------------------------------------------
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 35.587 s - in com.desafioselenium.tests.ManageCustomFieldsTests
+alterarCustomField  Time elapsed: 11.19 s
+criarCustomField  Time elapsed: 10.668 s
+criarCustomFieldDadosInvalidos  Time elapsed: 4.879 s
+linkarProjetoCustomField  Time elapsed: 8.834 s

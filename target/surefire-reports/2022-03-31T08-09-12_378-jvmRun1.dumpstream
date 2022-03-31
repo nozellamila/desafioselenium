@@ -1,0 +1,66 @@
+# Created at 2022-03-31T08:18:06.096
+TestSet has not finished before stream error has appeared >> initializing exit by non-null configuration: null
+java.io.EOFException
+	at java.io.DataInputStream.readInt(DataInputStream.java:392)
+	at org.apache.maven.surefire.booter.MasterProcessCommand.decode(MasterProcessCommand.java:115)
+	at org.apache.maven.surefire.booter.CommandReader$CommandRunnable.run(CommandReader.java:391)
+	at java.lang.Thread.run(Thread.java:748)
+
+
+# Created at 2022-03-31T08:18:07.688
+Unexpected IOException with stream: mar 31, 2022 8:18:07 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFORMAÇÕES: Detected dialect: W3C
+
+
+# Created at 2022-03-31T08:18:16.213
+Unexpected IOException: 6,1,com.desafioselenium.tests.ManageProjectsTests,alterarProjeto,null,null,null
+
+
+# Created at 2022-03-31T08:18:16.215
+Unexpected IOException: 5,1,com.desafioselenium.tests.ManageProjectsTests,adicionarUsuarioProjeto,null,null,null
+
+
+# Created at 2022-03-31T08:18:17.572
+Unexpected IOException with stream: mar 31, 2022 8:18:17 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFORMAÇÕES: Detected dialect: W3C
+
+
+# Created at 2022-03-31T08:18:25.944
+Unexpected IOException: 6,1,com.desafioselenium.tests.ManageProjectsTests,adicionarUsuarioProjeto,null,null,null
+
+
+# Created at 2022-03-31T08:18:25.947
+Unexpected IOException: 5,1,com.desafioselenium.tests.ManageProjectsTests,criarProjeto,null,null,null
+
+
+# Created at 2022-03-31T08:18:27.383
+Unexpected IOException with stream: mar 31, 2022 8:18:27 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFORMAÇÕES: Detected dialect: W3C
+
+
+# Created at 2022-03-31T08:18:34.229
+Unexpected IOException: 6,1,com.desafioselenium.tests.ManageProjectsTests,criarProjeto,null,null,null
+
+
+# Created at 2022-03-31T08:18:34.231
+Unexpected IOException: 5,1,com.desafioselenium.tests.ManageProjectsTests,criarProjetoDadosInvalidos,null,null,null
+
+
+# Created at 2022-03-31T08:18:35.609
+Unexpected IOException with stream: mar 31, 2022 8:18:35 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFORMAÇÕES: Detected dialect: W3C
+
+
+# Created at 2022-03-31T08:18:39.395
+Unexpected IOException: 6,1,com.desafioselenium.tests.ManageProjectsTests,criarProjetoDadosInvalidos,null,null,null
+
+
+# Created at 2022-03-31T08:18:39.398
+Unexpected IOException: 5,1,com.desafioselenium.tests.ManageProjectsTests,criarProjetoPrivado,null,null,null
+
+
+# Created at 2022-03-31T08:18:40.752
+Unexpected IOException with stream: mar 31, 2022 8:18:40 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFORMAÇÕES: Detected dialect: W3C
+
+

@@ -2,6 +2,7 @@ package com.desafioselenium.bases;
 
 import com.desafioselenium.GlobalParameters;
 import com.desafioselenium.utils.DriverFactory;
+import com.desafioselenium.utils.Utils;
 import io.qameta.allure.Allure;
 import org.openqa.selenium.*;
 import org.openqa.selenium.interactions.Actions;
@@ -10,6 +11,7 @@ import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.apache.commons.lang3.time.StopWatch;
 
+import java.io.ByteArrayInputStream;
 import java.util.List;
 
 public class PageBase {
@@ -93,7 +95,7 @@ public class PageBase {
                 element = waitForElement(locator);
                 element.click();
                 timeOut.stop();
-                Allure.addAttachment();
+                addScreenshot(3);
                 return;
             }
 
@@ -122,7 +124,9 @@ public class PageBase {
     }
 
     protected void sendKeys(By locator, String text){
+
         waitForElement(locator).sendKeys(text);
+        addScreenshot(3);
     }
 
     protected void sendKeysWithoutWaitVisible(By locator, String text){
@@ -146,6 +150,7 @@ public class PageBase {
     protected void comboBoxSelectByVisibleText(By locator, String text){
         Select comboBox = new Select(waitForElement(locator));
         comboBox.selectByVisibleText(text);
+        addScreenshot(3);
     }
 
     protected void mouseOver(By locator){
@@ -155,11 +160,13 @@ public class PageBase {
 
     protected String getText(By locator){
         String text = waitForElement(locator).getText();
+        addScreenshot(3);
         return text;
     }
 
     protected String getValue(By locator){
         String text = waitForElement(locator).getAttribute("value");
+        addScreenshot(3);
         return text;
     }
 
@@ -175,6 +182,7 @@ public class PageBase {
         {
             wait.until(ExpectedConditions.presenceOfElementLocated(locator));
             result = true;
+            addScreenshot(3);
         }
         catch (Exception e)
         {
@@ -200,11 +208,13 @@ public class PageBase {
     protected void SendKeysJavaScript(By locator, String value){
         WebElement element = waitForElement(locator);
         javaScriptExecutor.executeScript("arguments[0].value='" + value + "';", element);
+        addScreenshot(3);
     }
 
     protected void ClickJavaScript(By locator){
         WebElement element = waitForElement(locator);
         javaScriptExecutor.executeScript("arguments[0].click();", element);
+        addScreenshot(3);
     }
 
     protected void ScrollToElementJavaScript(By locator){
@@ -243,6 +253,12 @@ public class PageBase {
     }
 
     public boolean retornaIfMensagemPresente(String mensagem){
+        addScreenshot(3);
         return driver.getPageSource().contains(mensagem);
+    }
+
+    public void addScreenshot(int level){
+        ByteArrayInputStream screen = new ByteArrayInputStream(((TakesScreenshot) DriverFactory.INSTANCE).getScreenshotAs(OutputType.BYTES));
+        Allure.addAttachment(Utils.getMethodNameByLevel(3),screen);
     }
 }

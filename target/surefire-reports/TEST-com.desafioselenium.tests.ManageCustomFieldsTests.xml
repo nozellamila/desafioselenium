@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="com.desafioselenium.tests.LoginTests" time="278.201" tests="8" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="com.desafioselenium.tests.ManageCustomFieldsTests" time="35.587" tests="4" errors="0" skipped="0" failures="0">
   <properties>
     <property name="sun.desktop" value="windows"/>
     <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
@@ -65,12 +65,8 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="52.0"/>
   </properties>
-  <testcase name="esqueciASenhaUsuario" classname="com.desafioselenium.tests.LoginTests" time="125.585"/>
-  <testcase name="efetuarLoginComSucesso" classname="com.desafioselenium.tests.LoginTests" time="4.224"/>
-  <testcase name="criarContaEmailInvalido" classname="com.desafioselenium.tests.LoginTests" time="3.752"/>
-  <testcase name="esqueciASenhaUsuarioUsuarioInvalido" classname="com.desafioselenium.tests.LoginTests" time="4.191"/>
-  <testcase name="criarContaUsuarioInvalido" classname="com.desafioselenium.tests.LoginTests" time="3.777"/>
-  <testcase name="criarConta" classname="com.desafioselenium.tests.LoginTests" time="129.317"/>
-  <testcase name="efetuarLoginComSenhaInvalida" classname="com.desafioselenium.tests.LoginTests" time="3.489"/>
-  <testcase name="esqueciASenhaUsuarioEmailInvalido" classname="com.desafioselenium.tests.LoginTests" time="3.832"/>
+  <testcase name="alterarCustomField" classname="com.desafioselenium.tests.ManageCustomFieldsTests" time="11.19"/>
+  <testcase name="criarCustomField" classname="com.desafioselenium.tests.ManageCustomFieldsTests" time="10.668"/>
+  <testcase name="criarCustomFieldDadosInvalidos" classname="com.desafioselenium.tests.ManageCustomFieldsTests" time="4.879"/>
+  <testcase name="linkarProjetoCustomField" classname="com.desafioselenium.tests.ManageCustomFieldsTests" time="8.834"/>
 </testsuite>
