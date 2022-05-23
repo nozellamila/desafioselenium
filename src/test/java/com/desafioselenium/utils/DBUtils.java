@@ -15,7 +15,7 @@ public class DBUtils {
 
 
         try {
-            String driverName = "com.mysql.jdbc.Driver";
+            String driverName = "org.gjt.mm.mysql.Driver";
 
             Class.forName(driverName);
             java.sql.Statement stmt = null;
@@ -60,7 +60,7 @@ public class DBUtils {
         Connection connection = null;
 
         try {
-            String driverName = "com.mysql.jdbc.Driver";
+            String driverName = "org.gjt.mm.mysql.Driver";
 
             Class.forName(driverName);
             Statement stmt = null;
@@ -80,23 +80,22 @@ public class DBUtils {
         }
     }
 
-    public static void executeInitialQuery(){
+    public static void cleanDB(){
         Connection connection = null;
         GlobalParameters globalParameters = new GlobalParameters();
 
         String queriesPath = System.getProperty("user.dir")+"/src/test/java/com/desafioselenium/queries/";
-        String query = Utils.readFileToAString(queriesPath + "resetDatabase.sql");
+        String query = Utils.readFileToAString(queriesPath + "cleanDatabase.sql");
 
         try {
-            String driverName = "com.mysql.cj.jdbc.Driver";
+            String driverName = "org.gjt.mm.mysql.Driver";
 
             Class.forName(driverName);
             Statement stmt = null;
             connection = DriverManager.getConnection(globalParameters.DB_URL, globalParameters.DB_USER, globalParameters.DB_PASSWORD);
 
             stmt = connection.createStatement();
-            stmt.execute(query);
-                    //executeQuery(query);
+            stmt.executeUpdate(query);
 
         } catch (Exception e) {
             e.printStackTrace();
@@ -108,4 +107,20 @@ public class DBUtils {
             }
         }
     }
+
+    public static void executeInitialQuery(){
+
+        GlobalParameters globalParameters = new GlobalParameters();
+
+        String queriesPath = System.getProperty("user.dir")+"/src/test/java/com/desafioselenium/queries/";
+
+        try {
+            Runtime runtimeProcess = Runtime.getRuntime();
+            runtimeProcess.exec("cmd /c start " + queriesPath + "restore.bat");
+
+        } catch (Exception ex) {
+            ex.printStackTrace();
+        }
+    }
+
 }

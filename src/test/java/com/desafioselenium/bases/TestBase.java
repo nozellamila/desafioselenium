@@ -18,7 +18,8 @@ public class TestBase {
         driverFactory.INSTANCE.manage().window().maximize();
         driverFactory.INSTANCE.navigate().to(globalParameters.URL_DEFAULT);
 
-        //DBUtils.executeInitialQuery();
+        //DBUtils.cleanDB();
+        DBUtils.executeInitialQuery();
     }
 
     @AfterEach

@@ -5,30 +5,92 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cf213a9a-d227-43b8-906f-85c2d926eb78" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/desafioselenium/queries/resetDatabase.sql" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/desafioselenium/flows/ManageUserFlows.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/desafioselenium/flows/ManageUserFlows.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/desafioselenium/flows/ReportIssueFlows.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/desafioselenium/flows/ReportIssueFlows.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/desafioselenium/flows/ViewIssuesFlows.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/desafioselenium/flows/ViewIssuesFlows.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/desafioselenium/pages/EditIssuesPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/desafioselenium/pages/issuespages/EditIssuesPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/desafioselenium/pages/ManageCustomFieldsPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/desafioselenium/pages/managepages/ManageCustomFieldsPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/desafioselenium/pages/ManageGlobalProfilesPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/desafioselenium/pages/managepages/ManageGlobalProfilesPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/desafioselenium/pages/ManageProjectsPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/desafioselenium/pages/managepages/ManageProjectsPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/desafioselenium/pages/ManageTagsPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/desafioselenium/pages/managepages/ManageTagsPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/desafioselenium/pages/ManageUserPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/desafioselenium/pages/managepages/ManageUserPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/desafioselenium/pages/ReportIssuesPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/desafioselenium/pages/issuespages/ReportIssuesPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/desafioselenium/pages/ViewIssuesPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/desafioselenium/pages/issuespages/ViewIssuesPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/desafioselenium/queries/issuesqueries/buscaArquivo.sql" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/desafioselenium/queries/resetDatabase.sql" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/desafioselenium/queries/usuariosqueries/retornaSenhaDoUsuario.sql" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/desafioselenium/tests/EditIssuesTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/desafioselenium/tests/issuestests/EditIssuesTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/desafioselenium/tests/ManageCustomFieldsTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/desafioselenium/tests/managetests/ManageCustomFieldsTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/desafioselenium/tests/ManageGlobalProfilesTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/desafioselenium/tests/managetests/ManageGlobalProfilesTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/desafioselenium/tests/ManageProjectsTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/desafioselenium/tests/managetests/ManageProjectsTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/desafioselenium/tests/ManageTagsTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/desafioselenium/tests/managetests/ManageTagsTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/desafioselenium/tests/ManageUserTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/desafioselenium/tests/managetests/ManageUserTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/desafioselenium/tests/MyAccountTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/desafioselenium/tests/MyAccountTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/desafioselenium/tests/ReportIssuesTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/desafioselenium/tests/issuestests/ReportIssuesTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/desafioselenium/tests/ViewIssuesTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/desafioselenium/tests/issuestests/ViewIssuesTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker-compose.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/globalParameters.properties" beforeDir="false" afterPath="$PROJECT_DIR$/globalParameters.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/desafioselenium/bases/TestBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/desafioselenium/bases/TestBase.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/desafioselenium/utils/Browsers.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/desafioselenium/utils/Browsers.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/desafioselenium/utils/DBUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/desafioselenium/utils/DBUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/allure-results/084d7845-1d74-4240-b515-ac68d60685e3-result.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/allure-results/0bd2dd6f-c972-42a9-ab29-66fc3f9bb98c-container.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/allure-results/1663b595-79d4-41f9-8632-99a5c49863e7-result.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/allure-results/16ec8b5c-231e-4ce3-9aca-3a586bf42788-container.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/allure-results/18e1127c-af09-499c-b205-e75a04d64101-container.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/allure-results/195f6f97-91aa-46df-8e59-f2ac28a2651d-container.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/allure-results/1a6023a4-0f8a-4c8f-9dd2-e6ce4e838124-container.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/allure-results/1b7ad79b-0d9b-49f6-a5ec-67715711f0ed-result.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/allure-results/2814b13e-4398-4abd-b061-22aab8541d7c-container.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/allure-results/3c1a972f-dcb6-4ed8-b52c-c732b59e0f65-result.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/allure-results/41e3032c-d04e-423a-bbd7-3944a10bc548-container.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/allure-results/42d85d0d-e351-4d18-bd77-024ac6cf6885-result.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/allure-results/42eebca2-cfc7-46d1-843b-74d6d0fda9ef-container.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/allure-results/48754cbc-8134-48f3-9e04-035a34234f8a-container.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/allure-results/4ac192b9-78b2-4c07-a3e9-f476d6421863-container.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/allure-results/4f9becb9-30f6-4b24-b053-f50a46a72396-result.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/allure-results/56d37f69-3be9-4d47-a28b-6936dfea913d-attachment" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/allure-results/57e1fda7-fe42-4acb-a1e5-7a7cae4133bf-attachment" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/allure-results/5da7a3e9-87b1-4442-a443-d0b833dcd6d5-result.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/allure-results/60d42b47-5c48-4d0f-85cc-339784a36b02-container.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/allure-results/6ca41748-1a17-4e81-95f9-07ca3f56c447-result.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/allure-results/6eb1e5d5-a47a-44d3-a2d6-9f600f8e356b-container.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/allure-results/7347a355-da1b-4cfe-82b1-7634304ae245-container.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/allure-results/738797e2-ea06-4cff-9e9e-bf0c6a7b3934-result.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/allure-results/73df88b5-a3b5-405d-85f8-0926bcab8e13-result.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/allure-results/7dba7443-4a74-4c11-93eb-cb8264ee64eb-container.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/allure-results/7f06a619-739d-40db-a49b-0921e90b12ee-container.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/allure-results/8178f4f5-aafa-468a-88cd-a073c7f02260-container.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/allure-results/88e984f8-af7e-4f21-add3-6a83ae71de77-container.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/allure-results/8cbce330-1e66-4cd1-998f-3d3d57972fd3-container.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/allure-results/920f8547-b882-4c93-ad44-a44a4d3d34b5-result.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/allure-results/93997cca-ade3-4404-93b2-34e5edd2a982-container.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/allure-results/9edce0f3-f69d-4e2f-b0a8-59b16e7baac1-result.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/allure-results/a3632e26-018b-46e6-bb4c-5944fb71f979-container.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/allure-results/a3c899ae-2e91-4de1-8a5c-7f22f7ceb1a1-result.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/allure-results/a99bfed6-c0e0-426f-90f7-464a5185e327-result.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/allure-results/adb01935-c723-4027-8de0-a4f7de3b2746-attachment" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/allure-results/af6f74a3-9168-4a84-b0fe-29c765f36df7-result.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/allure-results/b36af31e-dc25-42c8-97b6-fb228d41859e-result.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/allure-results/bfa0c185-dcb4-4182-beb3-498b686ca09f-result.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/allure-results/c979dc47-09c2-4ce6-bc72-778582754d31-result.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/allure-results/d2ec993e-6d9f-4bf7-a361-9a2d0b0255f8-container.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/allure-results/d83ff3ae-60c8-4905-af08-5776236cbc83-result.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/allure-results/e11f3180-baab-4798-9f00-c8ead4aa2f3e-container.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/allure-results/e3622781-868d-4e30-b739-0de09d50f24f-container.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/allure-results/e4a827eb-18a2-449d-a623-f39703a10915-attachment" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/allure-results/e4f32622-4424-4ef9-9415-4bb2bb782451-result.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/allure-results/eb5fbaf0-c291-45db-b1bb-dae0e8a09686-container.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/allure-results/ef476789-768c-4ae4-ad40-67d60002c0a8-container.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/allure-results/f03b4308-80c4-4dd1-b15b-566dc383c30f-result.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/allure-results/f154e97f-9e07-4ff8-95fb-c2290ffd6c90-container.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/allure-results/f89b167a-1979-408f-8b4e-a8a4650bf37c-result.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/desafioselenium/bases/PageBase.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/desafioselenium/bases/PageBase.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/desafioselenium/bases/TestBase.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/desafioselenium/bases/TestBase.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/desafioselenium/flows/ManageUserFlows.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/desafioselenium/flows/ManageUserFlows.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/desafioselenium/flows/ReportIssueFlows.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/desafioselenium/flows/ReportIssueFlows.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/desafioselenium/flows/ViewIssuesFlows.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/desafioselenium/flows/ViewIssuesFlows.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/desafioselenium/pages/EditIssuesPage.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/desafioselenium/pages/ManageCustomFieldsPage.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/desafioselenium/pages/ManageGlobalProfilesPage.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/desafioselenium/pages/ManageProjectsPage.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/desafioselenium/pages/ManageTagsPage.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/desafioselenium/pages/ManageUserPage.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/desafioselenium/pages/ReportIssuesPage.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/desafioselenium/pages/ViewIssuesPage.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/desafioselenium/tests/EditIssuesTests.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/desafioselenium/tests/LoginTests.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/desafioselenium/tests/LoginTests.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/desafioselenium/tests/ManageCustomFieldsTests.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/desafioselenium/tests/ManageGlobalProfilesTests.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/desafioselenium/tests/ManageProjectsTests.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/desafioselenium/tests/ManageTagsTests.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/desafioselenium/tests/ManageUserTests.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/desafioselenium/tests/MyAccountTests.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/desafioselenium/tests/MyAccountTests.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/desafioselenium/tests/ReportIssuesTests.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/desafioselenium/tests/ViewIssuesTests.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/desafioselenium/utils/Browsers.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/desafioselenium/utils/Browsers.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/desafioselenium/utils/DBUtils.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/desafioselenium/utils/DBUtils.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,20 +107,20 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
   <component name="ProjectId" id="26yFjBYj9f5ohhELAtQday8OSZl" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">
-    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
-    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/test/resources/data" />
-    <property name="project.structure.last.edited" value="Project" />
-    <property name="project.structure.proportion" value="0.20507812" />
-    <property name="project.structure.side.proportion" value="0.2" />
-  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true"
+  }
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\Mila\Documents\Desafio-Selenium-Base2\desafioselenium\src\test\resources\data" />
@@ -75,7 +137,7 @@
       <command value="mvn test" />
     </option>
   </component>
-  <component name="RunManager" selected="Gradle.C:/Users/Mila/Documents/Desafio-Selenium-Base2/desafioselenium">
+  <component name="RunManager" selected="JUnit.EditIssuesTests.adicionarAnotacaoIssue">
     <configuration name="C:/Users/Mila/Documents/Desafio-Selenium-Base2/desafioselenium" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -161,8 +223,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Gradle.C:/Users/Mila/Documents/Desafio-Selenium-Base2/desafioselenium" />
         <item itemvalue="JUnit.EditIssuesTests.adicionarAnotacaoIssue" />
+        <item itemvalue="Gradle.C:/Users/Mila/Documents/Desafio-Selenium-Base2/desafioselenium" />
         <item itemvalue="JUnit.LoginTests.efetuarLoginComSucesso" />
         <item itemvalue="JUnit.ManageUserTests.criarUsuarioInformacoesInvalidas" />
         <item itemvalue="JUnit.MyAccountTests.mudarSenhaUsuarioDadosInvalidos" />
@@ -190,7 +252,6 @@
         </entry>
       </map>
     </option>
-    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -254,6 +315,11 @@
           <url>file://$PROJECT_DIR$/src/test/java/com/desafioselenium/pages/managepages/ManageGlobalProfilesPage.java</url>
           <line>30</line>
           <option name="timeStamp" value="27" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/com/desafioselenium/utils/DBUtils.java</url>
+          <line>86</line>
+          <option name="timeStamp" value="33" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
