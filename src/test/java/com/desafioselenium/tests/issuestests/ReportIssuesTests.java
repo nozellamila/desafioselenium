@@ -46,7 +46,6 @@ public class ReportIssuesTests extends TestBase {
 
         Assert.assertEquals(descricao, reportIssuesPage.retornaDescricaoCriada());
 
-        viewIssuesPage.deletarIssue();
     }
 
     @ParameterizedTest(name = "{index} => categoria={0}, resumo={1}, descricao={2}, mensagem={3}")
@@ -91,12 +90,9 @@ public class ReportIssuesTests extends TestBase {
 
         String idIssue = reportIssueFlows.criarIssue();
 
-        viewIssuesPage.deletarIssue();
-
         viewIssuesPage.clicarMenuViewIssues();
         viewIssuesPage.preencherIdIssue(idIssue);
 
         Assert.assertTrue(viewIssuesPage.mensagemEstaPresente(mensagemErro));
-
     }
 }

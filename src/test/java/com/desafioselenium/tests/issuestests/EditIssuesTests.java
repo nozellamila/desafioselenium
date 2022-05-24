@@ -46,7 +46,6 @@ public class EditIssuesTests extends TestBase {
 
         Assert.assertTrue(viewIssuesPage.retornaStatus().contains(status));
 
-        viewIssuesPage.deletarIssue();
     }
 
     @Test
@@ -68,7 +67,6 @@ public class EditIssuesTests extends TestBase {
 
         Assert.assertTrue(viewIssuesPage.retornaAssignedTarefa().contains(responsavel));
 
-        viewIssuesPage.deletarIssue();
     }
 
 

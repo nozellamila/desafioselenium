@@ -23,11 +23,9 @@ public class ManageCustomFieldsPage extends PageBase {
     public void preencherDefaultValue(String defaultValue){sendKeys(defaultValueInput, defaultValue);}
     public String retornaTextoCustomName(){return getValue(customNameInput);}
     public void deletaCustomField(){click(deleteCustomFieldButton); click(confirmaDeleteButton);}
-    public void scrollToInicio(){ ScrollToTop(); }
     public void scrollToUpdate(){ScrollToElementJavaScript(updateCustomFieldButton);}
     public boolean retornaTextoDefaultValue(String defaultValue){return returnIfElementExists(By.xpath("//td[text()='$defaultValue']".replace("$defaultValue", defaultValue)));}
     public boolean retornaProjetoLinkado(String projeto){return returnIfElementExists(By.xpath("//td/strong[text()='$projeto']".replace("$projeto", projeto)));}
-    public void clicarNomeCustomField(String nome){click(By.xpath("//a[text()='$nome']".replace("$nome", nome)));}
     public boolean mensagemEstaPresente(String mensagem){ return retornaIfMensagemPresente(mensagem); }
     public void selecionarProjeto(String projeto){comboBoxSelectByVisibleText(selecionarProjetoSelect, projeto);}
 

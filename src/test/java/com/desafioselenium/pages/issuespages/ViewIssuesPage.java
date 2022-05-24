@@ -10,9 +10,6 @@ public class ViewIssuesPage extends PageBase {
     By viewIssuesMenu = By.xpath("//span[text()=' View Issues ']");
     By bugIdInput = By.name("bug_id");
     By bugIdField = By.xpath("//td[@class='bug-id']");
-    By deletarIssueButton = By.xpath("//input[@value='Delete']");
-    By confirmarDeletarIssueButton = By.xpath("//input[@value='Delete Issues']");
-
     By bugTagsField = By.xpath("//td[@class='bug-tags']");
     By attachTagsInput = By.name("tag_string");
     By attachButton = By.xpath("//input[@value='Attach']");
@@ -58,10 +55,7 @@ public class ViewIssuesPage extends PageBase {
         sendKeys(bugIdInput, id + Keys.ENTER);
     }
     public String retornaIdPesquisado(){return getText(bugIdField);}
-    public void deletarIssue(){
-        click(deletarIssueButton);
-        click(confirmarDeletarIssueButton);
-    }
+
     public boolean mensagemEstaPresente(String mensagem){ return retornaIfMensagemPresente(mensagem); }
 
     public void preencherTag(String tag){
@@ -86,7 +80,6 @@ public class ViewIssuesPage extends PageBase {
 
     public void preencherIssueRelacionada(String id){ sendKeys(relacionaIssueInput, id);}
     public void clicarAdicionaRelacao(){ClickJavaScript(adicionaRelacaoButton);}
-    public boolean existeIssueRelacionada(){return returnIfElementExists(issueRelacionadaField);}
     public String retornaIssueRelacionada(){return getText(issueRelacionadaField);}
     public void clicarExcluirRelacao(){
         click(excluirRelacaoButton);

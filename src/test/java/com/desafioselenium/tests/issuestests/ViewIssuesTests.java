@@ -56,18 +56,11 @@ public class ViewIssuesTests extends TestBase {
         viewIssuesPage.clicarMenuViewIssues();
         viewIssuesPage.preencherIdIssue(idIssue);
 
-        String tagBefore = viewIssuesPage.retornaTagCadastrada();
-
-        if(tagBefore.contains("tag1")){
-            viewIssuesPage.clicarDetach();
-        }
-
         viewIssuesPage.preencherTag("tag1");
         viewIssuesPage.clicarAttach();
 
         Assert.assertTrue(viewIssuesPage.retornaTagCadastrada().contains("tag1"));
 
-        viewIssuesPage.clicarDetach();
     }
 
     @Test
@@ -96,8 +89,6 @@ public class ViewIssuesTests extends TestBase {
 
         Assert.assertTrue(viewIssuesPage.mensagemEstaPresente(mensagemIssueClonada));
 
-        viewIssuesPage.scrollToInicio();
-        viewIssuesPage.deletarIssue();
     }
 
     @Test
@@ -122,21 +113,11 @@ public class ViewIssuesTests extends TestBase {
         viewIssuesPage.clicarMenuViewIssues();
         viewIssuesPage.preencherIdIssue(idIssue);
 
-        if(viewIssuesPage.retornaStatus().contains(statusFeedback)){
-            viewIssuesPage.selecionarStatus(statusNew);
-            viewIssuesPage.clicarMudarStatus();
-            viewIssuesPage.clicarConfirmarMudancaStatus(confirmacaoStatusNew);
-        }
-
         viewIssuesPage.selecionarStatus(statusFeedback);
         viewIssuesPage.clicarMudarStatus();
         viewIssuesPage.clicarConfirmarMudancaStatus(confirmacaoStatusFeedback);
 
         Assert.assertTrue(viewIssuesPage.retornaStatus().contains(statusFeedback));
-
-        viewIssuesPage.selecionarStatus(statusNew);
-        viewIssuesPage.clicarMudarStatus();
-        viewIssuesPage.clicarConfirmarMudancaStatus(confirmacaoStatusNew);
     }
 
     @Test
@@ -151,18 +132,10 @@ public class ViewIssuesTests extends TestBase {
 
         viewIssuesPage.scrollToRelacionar();
 
-        if(viewIssuesPage.existeIssueRelacionada()){
-            viewIssuesPage.clicarExcluirRelacao();
-        }
-
         viewIssuesPage.preencherIssueRelacionada(idIssueARelacionar);
         viewIssuesPage.clicarAdicionaRelacao();
 
         Assert.assertTrue(viewIssuesPage.retornaIssueRelacionada().contains(idIssueARelacionar));
-
-        viewIssuesPage.scrollToInicio();
-
-        viewIssuesPage.deletarIssue();
 
     }
 
@@ -188,10 +161,6 @@ public class ViewIssuesTests extends TestBase {
 
         Assert.assertTrue(qtdLinhasAfter > qtdLinhasBefore);
 
-        viewIssuesPage.scrollToInicio();
-
-        viewIssuesPage.deletarIssue();
-
     }
 
     @Test
@@ -216,8 +185,6 @@ public class ViewIssuesTests extends TestBase {
         Assert.assertTrue(qtdLinhasAfter > qtdLinhasBefore);
 
         viewIssuesPage.scrollToInicio();
-
-        viewIssuesPage.deletarIssue();
     }
 
     @Test
@@ -249,7 +216,6 @@ public class ViewIssuesTests extends TestBase {
 
         viewIssuesPage.scrollToInicio();
 
-        viewIssuesPage.deletarIssue();
     }
 
     @Test
@@ -264,8 +230,6 @@ public class ViewIssuesTests extends TestBase {
         viewIssuesPage.fecharIssue();
 
         Assert.assertTrue(viewIssuesPage.retornaStatus().contains("closed"));
-
-        viewIssuesPage.deletarIssue();
     }
 
     @Test
@@ -286,6 +250,5 @@ public class ViewIssuesTests extends TestBase {
 
         Assert.assertTrue(viewIssuesPage.retornaStatus().contains("feedback"));
 
-        viewIssuesPage.deletarIssue();
     }
 }

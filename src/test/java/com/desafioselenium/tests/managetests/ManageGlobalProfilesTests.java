@@ -40,8 +40,6 @@ public class ManageGlobalProfilesTests extends TestBase {
         manageGlobalProfilesPage.clicarAdicionarPerfil();
 
         Assert.assertTrue(manageGlobalProfilesPage.isPlataformaCadastrada(plataforma));
-
-        manageGlobalProfilesPage.findEDeletaPerfilCadastrado(plataforma);
     }
 
     @Test
@@ -50,26 +48,17 @@ public class ManageGlobalProfilesTests extends TestBase {
         mainPage = new MainPage();
         manageGlobalProfilesPage = new ManageGlobalProfilesPage();
 
-        int rdm = new Random().nextInt(1000);
         String username = "administrator";
         String senha = "administrator";
-        String plataforma = "plataforma" + rdm;
-        String os = "10";
-        String osVersao = "V10";
+        String plataforma = "Windows";
 
         loginFlows.efetuarLogin(username, senha);
 
         mainPage.clicarMenuManage();
         mainPage.clicarManageGlobalProfiles();
 
-        manageGlobalProfilesPage.preencherPlataforma(plataforma);
-        manageGlobalProfilesPage.preencherOs(os);
-        manageGlobalProfilesPage.preencherOsVersao(osVersao);
-        manageGlobalProfilesPage.clicarAdicionarPerfil();
-
-        manageGlobalProfilesPage.findEDeletaPerfilCadastrado(plataforma);
+        manageGlobalProfilesPage.deletaProfile();
 
         Assert.assertTrue(!manageGlobalProfilesPage.isPlataformaCadastrada(plataforma));
-
     }
 }

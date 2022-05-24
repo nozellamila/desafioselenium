@@ -36,8 +36,6 @@ public class ManageCustomFieldsTests extends TestBase {
         manageCustomFieldsPage.clicarAdicionarCustomField();
 
         Assert.assertTrue(manageCustomFieldsPage.retornaTextoCustomName().contains(customName));
-
-        manageCustomFieldsPage.deletaCustomField();
     }
 
     @Test
@@ -85,9 +83,6 @@ public class ManageCustomFieldsTests extends TestBase {
         manageCustomFieldsPage.clicarUpdateCustomField();
 
         Assert.assertTrue(manageCustomFieldsPage.retornaTextoDefaultValue(defaultValue));
-
-        manageCustomFieldsPage.clicarNomeCustomField(customName);
-        manageCustomFieldsPage.deletaCustomField();
     }
 
     @Test
@@ -115,7 +110,5 @@ public class ManageCustomFieldsTests extends TestBase {
         manageCustomFieldsPage.clicarLinkProjeto();
 
         Assert.assertTrue(manageCustomFieldsPage.retornaProjetoLinkado(projeto));
-
-        manageCustomFieldsPage.deletaCustomField();
     }
 }
