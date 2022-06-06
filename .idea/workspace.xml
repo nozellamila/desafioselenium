@@ -6,14 +6,24 @@
   <component name="ChangeListManager">
     <list default="true" id="cf213a9a-d227-43b8-906f-85c2d926eb78" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/desafioselenium/bases/TestBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/desafioselenium/bases/TestBase.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/desafioselenium/pages/issuespages/ViewIssuesPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/desafioselenium/pages/issuespages/ViewIssuesPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/desafioselenium/pages/managepages/ManageCustomFieldsPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/desafioselenium/pages/managepages/ManageCustomFieldsPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/desafioselenium/pages/managepages/ManageGlobalProfilesPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/desafioselenium/pages/managepages/ManageGlobalProfilesPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/desafioselenium/tests/issuestests/EditIssuesTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/desafioselenium/tests/issuestests/EditIssuesTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/desafioselenium/pages/managepages/ManageProjectsPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/desafioselenium/pages/managepages/ManageProjectsPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/desafioselenium/pages/managepages/ManageTagsPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/desafioselenium/pages/managepages/ManageTagsPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/desafioselenium/queries/resetDatabase.sql" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/desafioselenium/queries/resetDatabase.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/desafioselenium/queries/restore.bat" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/desafioselenium/queries/restore.bat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/desafioselenium/tests/LoginTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/desafioselenium/tests/LoginTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/desafioselenium/tests/MyAccountTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/desafioselenium/tests/MyAccountTests.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/desafioselenium/tests/issuestests/ReportIssuesTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/desafioselenium/tests/issuestests/ReportIssuesTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/desafioselenium/tests/issuestests/ViewIssuesTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/desafioselenium/tests/issuestests/ViewIssuesTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/desafioselenium/tests/managetests/ManageCustomFieldsTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/desafioselenium/tests/managetests/ManageCustomFieldsTests.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/desafioselenium/tests/managetests/ManageGlobalProfilesTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/desafioselenium/tests/managetests/ManageGlobalProfilesTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/desafioselenium/tests/managetests/ManageProjectsTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/desafioselenium/tests/managetests/ManageProjectsTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/desafioselenium/tests/managetests/ManageTagsTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/desafioselenium/tests/managetests/ManageTagsTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/desafioselenium/tests/managetests/ManageUserTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/desafioselenium/tests/managetests/ManageUserTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/desafioselenium/utils/DBUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/desafioselenium/utils/DBUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/desafioselenium/bases/TestBase.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/desafioselenium/bases/TestBase.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/desafioselenium/tests/LoginTests.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/desafioselenium/tests/LoginTests.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/desafioselenium/tests/MyAccountTests.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/desafioselenium/tests/MyAccountTests.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/desafioselenium/utils/DBUtils.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/desafioselenium/utils/DBUtils.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -60,49 +70,19 @@
       <command value="mvn test" />
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.ManageGlobalProfilesTests">
-    <configuration name="EditIssuesTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.ManageTagsTests.criarTag">
+    <configuration name="LoginTests.esqueciASenhaUsuario" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="desafioselenium" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.desafioselenium.tests.issuestests.*" />
+          <option name="PATTERN" value="com.desafioselenium.tests.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.desafioselenium.tests.issuestests" />
-      <option name="MAIN_CLASS_NAME" value="com.desafioselenium.tests.issuestests.EditIssuesTests" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="EditIssuesTests.adicionarAnotacaoIssue" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="desafioselenium" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.desafioselenium.tests.issuestests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.desafioselenium.tests.issuestests" />
-      <option name="MAIN_CLASS_NAME" value="com.desafioselenium.tests.issuestests.EditIssuesTests" />
-      <option name="METHOD_NAME" value="adicionarAnotacaoIssue" />
+      <option name="PACKAGE_NAME" value="com.desafioselenium.tests" />
+      <option name="MAIN_CLASS_NAME" value="com.desafioselenium.tests.LoginTests" />
+      <option name="METHOD_NAME" value="esqueciASenhaUsuario" />
       <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ManageGlobalProfilesTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="desafioselenium" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.desafioselenium.tests.managetests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.desafioselenium.tests.managetests" />
-      <option name="MAIN_CLASS_NAME" value="com.desafioselenium.tests.managetests.ManageGlobalProfilesTests" />
-      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -123,7 +103,23 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ViewIssuesTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ManageTagsTests.criarTag" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="desafioselenium" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.desafioselenium.tests.managetests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.desafioselenium.tests.managetests" />
+      <option name="MAIN_CLASS_NAME" value="com.desafioselenium.tests.managetests.ManageTagsTests" />
+      <option name="METHOD_NAME" value="criarTag" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ReportIssuesTests.deletarIssue" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="desafioselenium" />
       <extension name="coverage">
         <pattern>
@@ -132,19 +128,34 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.desafioselenium.tests.issuestests" />
-      <option name="MAIN_CLASS_NAME" value="com.desafioselenium.tests.issuestests.ViewIssuesTests" />
-      <option name="TEST_OBJECT" value="class" />
+      <option name="MAIN_CLASS_NAME" value="com.desafioselenium.tests.issuestests.ReportIssuesTests" />
+      <option name="METHOD_NAME" value="deletarIssue" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="com.desafioselenium.tests in desafioselenium" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="desafioselenium" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.desafioselenium.tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.desafioselenium.tests" />
+      <option name="TEST_OBJECT" value="package" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.ManageGlobalProfilesTests" />
+        <item itemvalue="JUnit.ManageTagsTests.criarTag" />
         <item itemvalue="JUnit.ManageGlobalProfilesTests.deletarPerfil" />
-        <item itemvalue="JUnit.ViewIssuesTests" />
-        <item itemvalue="JUnit.EditIssuesTests" />
-        <item itemvalue="JUnit.EditIssuesTests.adicionarAnotacaoIssue" />
+        <item itemvalue="JUnit.LoginTests.esqueciASenhaUsuario" />
+        <item itemvalue="JUnit.com.desafioselenium.tests in desafioselenium" />
+        <item itemvalue="JUnit.ReportIssuesTests.deletarIssue" />
       </list>
     </recent_temporary>
   </component>
@@ -195,38 +206,38 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/com/desafioselenium/tests/managetests/ManageUserTests.java</url>
-          <line>58</line>
+          <line>54</line>
           <option name="timeStamp" value="10" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/com/desafioselenium/tests/managetests/ManageTagsTests.java</url>
-          <line>44</line>
-          <option name="timeStamp" value="11" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/com/desafioselenium/tests/LoginTests.java</url>
-          <line>140</line>
+          <line>135</line>
           <option name="timeStamp" value="12" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/com/desafioselenium/tests/LoginTests.java</url>
-          <line>160</line>
+          <line>155</line>
           <option name="timeStamp" value="13" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/com/desafioselenium/tests/managetests/ManageProjectsTests.java</url>
-          <line>41</line>
-          <option name="timeStamp" value="16" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/com/desafioselenium/tests/managetests/ManageProjectsTests.java</url>
-          <line>39</line>
-          <option name="timeStamp" value="20" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/com/desafioselenium/utils/DBUtils.java</url>
-          <line>86</line>
+          <line>90</line>
           <option name="timeStamp" value="33" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/com/desafioselenium/tests/managetests/ManageTagsTests.java</url>
+          <line>87</line>
+          <option name="timeStamp" value="37" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/com/desafioselenium/tests/managetests/ManageTagsTests.java</url>
+          <line>93</line>
+          <option name="timeStamp" value="38" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/com/desafioselenium/tests/issuestests/ReportIssuesTests.java</url>
+          <line>99</line>
+          <option name="timeStamp" value="39" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

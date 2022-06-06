@@ -36,6 +36,7 @@ public class ManageProjectsPage extends PageBase {
     By colunaUsername = By.xpath("//div[3]/form/div[1]/table/tbody/tr/td[1]/a/span");
     By enabledCheckbox = By.xpath("//table/tbody/tr[3]/td[2]/span");
     By checkColunaEnabled = By.xpath("//div[2]/table/tbody/tr[1]/td[3]/i");
+    By nomeProjetoTag = By.xpath("//div[2]/table/tbody/tr[1]/td[1]/a");
 
 
     //Actions
@@ -47,11 +48,7 @@ public class ManageProjectsPage extends PageBase {
     public void clicarUpdateProjeto(){click(updateProjectButton);}
     public void preencherNomeProjeto(String nome){sendKeys(projectNameInput, nome);}
     public void findProjetoCadastrado(){
-        String pathNome = "//div[2]/table/tbody/tr[1]/td[1]/a";
-
-        WebElement tagWebelement = waitForElement(By.xpath(pathNome));
-        tagWebelement.click();
-
+        click(nomeProjetoTag);
     }
     public String retornaNomeProjeto(){return getValue(projectNameInput);}
     public void deleteProjeto(){click(deleteProjectButton); click(deleteProjectButton);}

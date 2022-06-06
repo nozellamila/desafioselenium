@@ -93,6 +93,10 @@ public class ReportIssuesTests extends TestBase {
         viewIssuesPage.clicarMenuViewIssues();
         viewIssuesPage.preencherIdIssue(idIssue);
 
+        viewIssuesPage.deletarIssue();
+
+        viewIssuesPage.preencherIdIssue(idIssue);
+
         Assert.assertTrue(viewIssuesPage.mensagemEstaPresente(mensagemErro));
     }
 }

@@ -53,10 +53,6 @@ public class ManageUserTests extends TestBase {
         manageUserPage.clicarAplicarFiltro();
 
         Assert.assertTrue(manageUserPage.retornaTextoColunaRealName().contains(novoUsuario));
-
-        manageUserPage.clicarColunaUsername();
-        manageUserPage.deletarUsuario();
-
     }
 
     @ParameterizedTest(name = "{index} => username={0}, email={1}, mensagem={2}")
@@ -126,10 +122,6 @@ public class ManageUserTests extends TestBase {
         manageUserPage.clicarAplicarFiltro();
 
         Assert.assertTrue(manageUserPage.retornaTextoColunaAccessLevel().contains(novoAccessLevel));
-
-        manageUserPage.clicarColunaUsername();
-        manageUserPage.deletarUsuario();
-
     }
 
     @Test
@@ -152,9 +144,6 @@ public class ManageUserTests extends TestBase {
         manageUserPage.clicarAplicarFiltro();
 
         Assert.assertTrue(!manageUserPage.checkHabilitadoExiste());
-
-        manageUserPage.clicarColunaUsername();
-        manageUserPage.deletarUsuario();
     }
 
     @Test
@@ -178,8 +167,5 @@ public class ManageUserTests extends TestBase {
         manageUserPage.clicarAplicarFiltro();
 
         Assert.assertTrue(!manageUserPage.checkHabilitadoExiste());
-
-        manageUserPage.clicarColunaUsername();
-        manageUserPage.deletarUsuario();
     }
 }

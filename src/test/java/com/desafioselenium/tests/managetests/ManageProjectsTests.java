@@ -39,7 +39,6 @@ public class ManageProjectsTests extends TestBase {
 
         Assert.assertTrue(manageProjectsPage.retornaNomeProjeto().contains(nomeProjeto));
 
-        manageProjectsPage.deleteProjeto();
     }
 
     @Test
@@ -67,7 +66,6 @@ public class ManageProjectsTests extends TestBase {
 
         Assert.assertTrue(manageProjectsPage.mensagemEstaPresente(" This project is private. Only administrators and manually added users have access.\t"));
 
-        manageProjectsPage.deleteProjeto();
     }
 
     @Test
@@ -117,9 +115,7 @@ public class ManageProjectsTests extends TestBase {
         manageProjectsPage.clicarUpdateProjeto();
 
         Assert.assertTrue(manageProjectsPage.retornaTextoColunaStatus().contains(status));
-        //exclui projeto
-        manageProjectsPage.findProjetoCadastrado();
-        manageProjectsPage.deleteProjeto();
+
     }
 
     @Test
@@ -152,12 +148,6 @@ public class ManageProjectsTests extends TestBase {
 
         Assert.assertTrue(manageProjectsPage.retornaTextoColunaNameSubProjeto().contains(nomeSubProjeto));
 
-        manageProjectsPage.clicarEditarSubProjeto();
-        manageProjectsPage.deleteProjeto();
-
-        manageProjectsPage.findProjetoCadastrado();
-        manageProjectsPage.deleteProjeto();
-
     }
 
     @Test
@@ -181,8 +171,6 @@ public class ManageProjectsTests extends TestBase {
         manageProjectsPage.clicarAddCategoria();
 
         Assert.assertTrue(manageProjectsPage.retornaTextoColunaCategoria().contains(categoria));
-
-        manageProjectsPage.deleteCategoria();
     }
 
     @Test
@@ -211,11 +199,6 @@ public class ManageProjectsTests extends TestBase {
         manageProjectsPage.clicarAddVersao();
 
         Assert.assertTrue(manageProjectsPage.retornaTextoColunaVersao().contains(versao));
-
-        manageProjectsPage.clicarDeletarVersao();
-
-        manageProjectsPage.scrollToInicio();
-        manageProjectsPage.deleteProjeto();
     }
 
     @Test
@@ -245,9 +228,6 @@ public class ManageProjectsTests extends TestBase {
         manageProjectsPage.clicarAddUsuario();
 
         Assert.assertTrue(manageProjectsPage.retornaTextoColunaUsername().contains(usuario));
-
-        manageProjectsPage.scrollToInicio();
-        manageProjectsPage.deleteProjeto();
     }
 
 

@@ -32,17 +32,10 @@ public class ManageTagsTests extends TestBase {
         mainPage.clicarMenuManage();
         mainPage.clicarManageTags();
 
-        int countBefore = manageTagsPage.countLinhasTabelaManageTags();
-
         manageTagsPage.preencherTagName(tag);
         manageTagsPage.clicarCreateTag();
 
-        int countAfter = manageTagsPage.countLinhasTabelaManageTags();
-
-        Assert.assertTrue(countAfter > countBefore);
-
-        manageTagsPage.findTagCadastrada(tag);
-        manageTagsPage.clicarDeleteTag();
+        Assert.assertTrue(manageTagsPage.retornaTagDescription().contains(tag));
     }
 
     @Test
@@ -62,14 +55,8 @@ public class ManageTagsTests extends TestBase {
         mainPage.clicarMenuManage();
         mainPage.clicarManageTags();
 
-        int countBefore = manageTagsPage.countLinhasTabelaManageTags();
-
         manageTagsPage.preencherTagName(tag);
         manageTagsPage.clicarCreateTag();
-
-        int countAfter = manageTagsPage.countLinhasTabelaManageTags();
-
-        Assert.assertTrue(countAfter > countBefore);
 
         manageTagsPage.findTagCadastrada(tag);
         manageTagsPage.clicarUpdateTag();
@@ -77,8 +64,6 @@ public class ManageTagsTests extends TestBase {
         manageTagsPage.clicarUpdateTag();
 
         Assert.assertTrue(manageTagsPage.retornaTagDescription().contains(descricao));
-
-        manageTagsPage.clicarDeleteTag();
     }
 
     @Test
@@ -97,14 +82,8 @@ public class ManageTagsTests extends TestBase {
         mainPage.clicarMenuManage();
         mainPage.clicarManageTags();
 
-        int countBefore = manageTagsPage.countLinhasTabelaManageTags();
-
         manageTagsPage.preencherTagName(tag);
         manageTagsPage.clicarCreateTag();
-
-        int countAfter = manageTagsPage.countLinhasTabelaManageTags();
-
-        Assert.assertTrue(countAfter > countBefore);
 
         manageTagsPage.findTagCadastrada(tag);
         manageTagsPage.clicarDeleteTag();
@@ -112,6 +91,6 @@ public class ManageTagsTests extends TestBase {
         mainPage.clicarMenuManage();
         mainPage.clicarManageTags();
 
-        Assert.assertTrue(!manageTagsPage.isTagCadastrada(tag));
+        Assert.assertTrue(!manageTagsPage.isTagCadastrada());
     }
 }

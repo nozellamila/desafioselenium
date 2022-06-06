@@ -51,11 +51,18 @@ public class ManageGlobalProfilesTests extends TestBase {
         String username = "administrator";
         String senha = "administrator";
         String plataforma = "Windows";
+        String os = "10";
+        String osVersao = "V10";
 
         loginFlows.efetuarLogin(username, senha);
 
         mainPage.clicarMenuManage();
         mainPage.clicarManageGlobalProfiles();
+
+        manageGlobalProfilesPage.preencherPlataforma(plataforma);
+        manageGlobalProfilesPage.preencherOs(os);
+        manageGlobalProfilesPage.preencherOsVersao(osVersao);
+        manageGlobalProfilesPage.clicarAdicionarPerfil();
 
         manageGlobalProfilesPage.deletaProfile();
 

@@ -2,9 +2,13 @@ package com.desafioselenium.utils;
 
 import com.desafioselenium.GlobalParameters;
 
+import javax.swing.*;
+import java.io.IOException;
 import java.sql.*;
 
 import java.util.ArrayList;
+
+import static org.checkerframework.checker.units.UnitsTools.s;
 
 public class DBUtils {
 
@@ -108,16 +112,19 @@ public class DBUtils {
         }
     }
 
-    public static void executeInitialQuery(){
+    public static void executeInitialQuery() throws IOException, InterruptedException {
 
         GlobalParameters globalParameters = new GlobalParameters();
+        String dbName = "bugtracker";
+        String dbUser = globalParameters.DB_USER;
+        String dbPass = globalParameters.DB_PASSWORD;
 
-        String queriesPath = System.getProperty("user.dir")+"/src/test/java/com/desafioselenium/queries/";
+        String restorePath = System.getProperty("user.dir")+"/src/test/java/com/desafioselenium/queries/resetDatabase.sql";
+
+        String[] executeCmd = new String[]{"C:\\wamp64\\bin\\mysql\\mysql5.7.36\\bin\\mysql", dbName, "-u" + dbUser, "-p" + dbPass, "-e", " source " + restorePath};
 
         try {
-            Runtime runtimeProcess = Runtime.getRuntime();
-            runtimeProcess.exec("cmd /c start " + queriesPath + "restore.bat");
-
+            Process runtimeProcess = Runtime.getRuntime().exec(executeCmd);
         } catch (Exception ex) {
             ex.printStackTrace();
         }

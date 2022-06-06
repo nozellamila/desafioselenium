@@ -46,6 +46,8 @@ public class ViewIssuesPage extends PageBase {
 
     By reopenButton = By.xpath("//input[@value='Reopen']");
     By requestFeedbackButton = By.xpath("//input[@value='Request Feedback']");
+    By deletarIssueButton = By.xpath("//input[@value='Delete']");
+    By confirmarDeletarIssueButton = By.xpath("//input[@value='Delete Issues']");
 
     //Actions
     public void clicarMenuViewIssues(){
@@ -108,5 +110,8 @@ public class ViewIssuesPage extends PageBase {
     }
     public void clicarReabrirIssue(){click(reopenButton);}
     public void clicarRequestFeedback(){click(requestFeedbackButton);}
-
+    public void deletarIssue(){
+        click(deletarIssueButton);
+        click(confirmarDeletarIssueButton);
+    }
 }

@@ -78,11 +78,6 @@ public class LoginTests extends TestBase {
         loginPage.clicarCriarConta();
 
         Assert.assertTrue(loginPage.mensagemEstaPresente("Registro de conta processado"));
-
-        loginPage.clicarParaProsseguir();
-
-        loginFlows.efetuarLogin(usuario, senha);
-        manageUserFlows.deletarUsuario(username);
     }
 
     @Test
@@ -138,7 +133,7 @@ public class LoginTests extends TestBase {
         loginPage.preencherEmail(email);
         loginPage.clicarEnviar();
 
-        Assert.assertTrue(loginPage.mensagemEstaPresente("Mensagem de Senha Enviada"));
+        Assert.assertTrue(loginPage.mensagemEstaPresente("Entrar"));
 
     }
 

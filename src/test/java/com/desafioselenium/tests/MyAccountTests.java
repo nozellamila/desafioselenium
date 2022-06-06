@@ -41,14 +41,6 @@ public class MyAccountTests extends TestBase {
         loginFlows.efetuarLogin(username, senhaNova);
 
         Assert.assertEquals(username, mainPage.retornaUsernameDasInformacoesDeLogin());
-
-        //Voltando à senha antiga
-        myAccountPage.clicarUserInfo();
-        myAccountPage.clicarMyAccount();
-        myAccountPage.preencherSenhaAtual(senhaNova);
-        myAccountPage.preencherNovaSenha(senhaAtual);
-        myAccountPage.preencherConfirmacaoSenha(senhaAtual);
-        myAccountPage.clicarUpdateUser();
     }
 
     @ParameterizedTest(name = "{index} => senhaAtual={0}, senhaNova={1}, confirmacaoSenha={2}, mensagem={3}")
@@ -100,9 +92,6 @@ public class MyAccountTests extends TestBase {
         myAccountPage.clicarMyAccount();
 
         Assert.assertEquals(novoNomeReal, myAccountPage.retornaRealName());
-
-        myAccountPage.preencherRealnameInput(nomeReal);
-        myAccountPage.clicarUpdateUser();
     }
 
     @Test
@@ -113,7 +102,6 @@ public class MyAccountTests extends TestBase {
         myAccountPage = new MyAccountPage();
         String username = "administrator";
         String senha = "administrator";
-        String refreshDelayPadrao = "30";
         String novoRefreshDelay = "40";
 
         loginFlows.efetuarLogin(username, senha);
@@ -122,19 +110,10 @@ public class MyAccountTests extends TestBase {
         myAccountPage.clicarMyAccount();
         myAccountPage.clicarPreferences();
 
-        String refreshDelayAtual = myAccountPage.retornaRefreshDelay();
-
-        if(refreshDelayAtual.equals("40")){
-            myAccountPage.preencherRefreshDelayInput(refreshDelayPadrao);
-            myAccountPage.scrollToUpdatePrefs();
-            myAccountPage.clicarUpdatePrefs();
-            myAccountPage.scrollToInicio();
-        }
-
         myAccountPage.preencherRefreshDelayInput(novoRefreshDelay);
         myAccountPage.clicarUpdatePrefs();
 
-        refreshDelayAtual = myAccountPage.retornaRefreshDelay();
+        String refreshDelayAtual = myAccountPage.retornaRefreshDelay();
 
         Assert.assertEquals(novoRefreshDelay, refreshDelayAtual);
 
