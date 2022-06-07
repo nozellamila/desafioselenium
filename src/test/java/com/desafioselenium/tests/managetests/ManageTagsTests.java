@@ -63,7 +63,7 @@ public class ManageTagsTests extends TestBase {
         manageTagsPage.preencherTagDescription(descricao);
         manageTagsPage.clicarUpdateTag();
 
-        Assert.assertTrue(manageTagsPage.retornaTagDescription().contains(descricao));
+        Assert.assertTrue(manageTagsPage.retornaTagDescriptionColumn().contains(descricao));
     }
 
     @Test

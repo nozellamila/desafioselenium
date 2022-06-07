@@ -24,9 +24,15 @@ public class ManageCustomFieldsPage extends PageBase {
     public String retornaTextoCustomName(){return getValue(customNameInput);}
     public void deletaCustomField(){click(deleteCustomFieldButton); click(confirmaDeleteButton);}
     public void scrollToUpdate(){ScrollToElementJavaScript(updateCustomFieldButton);}
-    public boolean retornaTextoDefaultValue(String defaultValue){return returnIfElementExists(By.xpath("//td[text()='$defaultValue']".replace("$defaultValue", defaultValue)));}
-    public boolean retornaProjetoLinkado(String projeto){return returnIfElementExists(By.xpath("//td/strong[text()='$projeto']".replace("$projeto", projeto)));}
+    public boolean retornaTextoDefaultValue(String defaultValue){return returnIfElementExists(retornaElementoDefaultValue(defaultValue));}
+    public boolean retornaProjetoLinkado(String projeto){return returnIfElementExists(retornaElementoProjeto(projeto));}
     public boolean mensagemEstaPresente(String mensagem){ return retornaIfMensagemPresente(mensagem); }
     public void selecionarProjeto(String projeto){comboBoxSelectByVisibleText(selecionarProjetoSelect, projeto);}
 
+    public By retornaElementoDefaultValue(String defaultValue){
+        return By.xpath("//td[text()='$defaultValue']".replace("$defaultValue", defaultValue));
+    }
+    public By retornaElementoProjeto(String projeto){
+        return By.xpath("//td/strong[text()='$projeto']".replace("$projeto", projeto));
+    }
 }

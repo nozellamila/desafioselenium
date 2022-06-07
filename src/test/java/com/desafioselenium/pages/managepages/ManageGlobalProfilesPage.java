@@ -25,6 +25,11 @@ public class ManageGlobalProfilesPage extends PageBase {
         click(deleteProfileButton);
         click(confirmaDeleteProfileButton);
     }
-    public boolean isPlataformaCadastrada(String plataforma){return returnIfElementExists(By.xpath("//td[text()='$plataforma']".replace("$plataforma", plataforma)));}
+    public boolean isPlataformaCadastrada(String plataforma){
+        return returnIfElementExists(retornaElementoPlataforma(plataforma));
+    }
+    public By retornaElementoPlataforma(String plataforma){
+        return By.xpath("//td[text()='$plataforma']".replace("$plataforma", plataforma));
+    }
 
 }

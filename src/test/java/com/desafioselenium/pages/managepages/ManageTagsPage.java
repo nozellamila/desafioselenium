@@ -13,6 +13,7 @@ public class ManageTagsPage extends PageBase {
     By tagNameInput = By.id("tag-name");
     By tagDescriptionTextArea = By.id("tag-description");
     By tagDescriptionField = By.xpath("//table/tbody/tr[1]/td[1]");
+    By tagDescriptionColumn = By.xpath("//table/tbody/tr[6]/td[2]");
     By createTagButton = By.xpath("//input[@value='Create Tag']");
     By updateTagButton = By.xpath("//input[@value='Update Tag']");
     By countLinhasManageTags = By.xpath("//div[4]/div[2]/div[2]/div/table/tbody/tr/td/a");
@@ -29,6 +30,8 @@ public class ManageTagsPage extends PageBase {
         return waitForElements(countLinhasManageTags).size();
     }
     public String retornaTagDescription(){return getText(tagDescriptionField);}
+    public String retornaTagDescriptionColumn(){return getText(tagDescriptionColumn);}
+
     public void findTagCadastrada(String tag){
         click(tagPath);
     }

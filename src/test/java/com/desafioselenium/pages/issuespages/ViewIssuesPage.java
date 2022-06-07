@@ -16,7 +16,7 @@ public class ViewIssuesPage extends PageBase {
     By detachButton = By.xpath("//table/tbody/tr[12]/td/a[2]");
 
     By cloneButton = By.xpath("//input[@value='Clone']");
-    By issueHistoryTitle = By.xpath("/html/body/div[2]/div[2]/div[2]/div/div[6]/div[2]/div[1]/h4");
+    By issueHistoryTitle = By.xpath("//div[6]/div[2]/div[1]/h4");
 
     By statusField = By.xpath("//td[@class='bug-status']");
     By changeStatusButton = By.xpath("//input[@value='Change Status To:']");
@@ -75,7 +75,7 @@ public class ViewIssuesPage extends PageBase {
     public void selecionarStatus(String status){comboBoxSelectByVisibleText(statusCombo, status);}
     public void clicarMudarStatus(){click(changeStatusButton);}
     public void clicarConfirmarMudancaStatus(String status){
-        By confirmChangeStatusButton = By.xpath("//input[@value='$status']".replace("$status", status));
+        By confirmChangeStatusButton = retornaElementoStatus(status);
         click(confirmChangeStatusButton);
     }
     public String retornaStatus(){ return getText(statusField);}
@@ -113,5 +113,8 @@ public class ViewIssuesPage extends PageBase {
     public void deletarIssue(){
         click(deletarIssueButton);
         click(confirmarDeletarIssueButton);
+    }
+    public By retornaElementoStatus(String status){
+        return By.xpath("//input[@value='$status']".replace("$status", status));
     }
 }
